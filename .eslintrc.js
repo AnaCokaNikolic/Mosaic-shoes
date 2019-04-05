@@ -15,8 +15,10 @@ module.exports = {
     "rules": {
         "func-names": 0,
         "linebreak-style": 0,
+        "object-curly-spacing": 0,
+        "indent": 0,
         "quotes": ["error", "backtick"],
-        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "arrow-body-style": ["error", "always"],
         "no-restricted-syntax": 0,
         "no-underscore-dangle": 0,
         "no-await-in-loop": 0
