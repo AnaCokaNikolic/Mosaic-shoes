@@ -253,3 +253,69 @@ header {
     padding: 0 10px;
     color: gray;
 }
+
+/******************************************
+             O NAMA
+******************************************/
+
+.hide {
+    display: none;
+}
+
+#o-nama {
+    padding-top: 125px;
+    position: relative;
+}
+
+.oNama-img {
+    position: relative;
+    width: 150px;
+    height: auto;
+    border: 4px solid #E1E1E1;
+    border-radius: 50%;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.oNama-right {
+    text-align: right;
+    padding-top: 50px;
+    color: gray;
+}
+
+.oNama-right h4 {
+    text-align: right;
+    padding: 0;
+    padding-right: 10px;
+}
+
+.oNama-right p {
+   padding: 10px 10px 0 65px;
+}
+
+.oNama-left {
+    text-align: left;
+    padding-top: 50px;
+    color: gray;
+}
+
+.oNama-left p {
+    padding: 10px 65px 0 10px;
+}
+
+.oNama-left h4{
+    text-align: left;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.col-2::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #E1E1E1;
+    top: 350px;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -2px;
+}
