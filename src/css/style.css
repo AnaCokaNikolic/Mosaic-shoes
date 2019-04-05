@@ -319,3 +319,22 @@ header {
     left: 50%;
     margin-left: -2px;
 }
+
+/******************************************
+             TIM
+******************************************/
+
+#tim {
+    padding-top: 125px;
+}
+
+.tim-img {
+    width: 225px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.video {
+    margin: 50px auto;
+}

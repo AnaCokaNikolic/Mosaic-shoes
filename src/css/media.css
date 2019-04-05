@@ -201,20 +201,20 @@
     margin-top: -30px;
  }
 
- #tim {
-    padding-top: 100px;
- }
+  #tim {
+      padding-top: 100px;
+  }
 
- .tim-img {
-    width: 220px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
- }
+  .tim-img {
+      width: 220px;
+      height: auto;
+      border-radius: 50%;
+      margin-top: 20px;
+  }
 
- #tim .text-center {
-    margin: 0 140px;
- }
+  #tim .text-center {
+      margin: 0 140px;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -319,7 +319,6 @@
     display: block;
     padding: 15px;
  }
-
 
  .topnav.responsive {
     transition: 0.9s;
