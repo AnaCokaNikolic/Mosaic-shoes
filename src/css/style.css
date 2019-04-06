@@ -338,3 +338,50 @@ header {
 .video {
     margin: 50px auto;
 }
+
+/******************************************
+             FOOTER
+******************************************/
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 4px double #fff;
+    border-radius: 50%;
+    box-sizing:border-box;
+    margin: 8px;
+    transition:.4s;
+}
+
+.circle:first-child {
+    padding: 8px 15px;
+}
+
+.circle:hover{
+    border-color: #BB174B;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.white-text {
+    list-style: none;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    transition:.4s;
+}
+
+.white-text:hover {
+    color: #BB174B;
+}
