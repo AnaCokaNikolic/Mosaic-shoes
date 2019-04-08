@@ -18,7 +18,7 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: `html-loader`,
-          options: {minimize: true},
+          // options: {minimize: true},
         },
       },
       {
@@ -27,6 +27,10 @@ module.exports = {
         use: {
           loader: `babel-loader`,
         },
+      },
+      {
+        test: /\.ts$/,
+        use: `ts-loader`,
       },
       {
         test: /\.(png|svg|jpg|gif|ico)$/,
@@ -40,6 +44,17 @@ module.exports = {
           `style-loader`,
           `css-loader`,
           `sass-loader`,
+        ],
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: `file-loader`,
+            options: {
+              name: `[name].[ext]`,
+            },
+          },
         ],
       },
     ],
