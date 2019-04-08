@@ -12,7 +12,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png"> -->
 </head>
 <body>
     <!-- === HEDADER: begin === -->
@@ -27,7 +28,7 @@
         <div class="container">
           <div class="row">
             <div class="col-3 logo">
-              <a href="#first-section" class="link active"><img alt="Mosaic logo"></a>
+              <a href="#first-section" class="link"><img src="./images/logos/logo.png" alt="Mosaic logo"></a>
             </div>
             <div class="col-9 nav-right-col"> 
               <ul class="nav-right navigation">
@@ -52,7 +53,7 @@
                 <div class="text-wrapper">
                     <p id="welcome">Dobro došli!</p>
                     <p id="quote">Do uspeha se stiže korak po korak</p><br>
-                    <a id="enter" href="#">Krenite</a>
+                    <a id="enter" href="#proizvodi">Krenite</a>
                 </div>
             </div>
         </section>
@@ -108,7 +109,106 @@
         
         <!-- === PROIZVODI SECTION: begin === -->
         <section id="proizvodi">
-            
+            <div class="container">
+                    <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center">Proizvodi</h2>
+                        <h3 class="text-center">Obojite svoje korake</h3>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-3 container-thumb">
+                        <div class="portfolio-item">
+                            <img src="./images/proizvodi/1-thumb.jpg" class="proizvod-thumb" alt="Cipele">
+                            <figcaption class="mask">
+                            <h4>Cipele</h4>
+                            </figcaption>
+                            <ul class="external">
+                            <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/2-thumb.jpg" class="proizvod-thumb" alt="Sandale">
+                                <figcaption class="mask">
+                                    <h4>Sandale</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/3-thumb.jpg" class="proizvod-thumb" alt="Baletanke">
+                                <figcaption class="mask">
+                                    <h4>Baletanke</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div> 
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/4-thumb.jpg" class="proizvod-thumb" alt="Papuce">
+                                <figcaption class="mask">
+                                    <h4>Papuče</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/5-thumb.jpg" class="proizvod-thumb" alt="Tasna">
+                                <figcaption class="mask">
+                                    <h4>Mala tašna</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/6-thumb.jpg" class="proizvod-thumb" alt="Tasna">
+                                <figcaption class="mask">
+                                    <h4>Pismo tašna</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-3 container-thumb">
+                        <div class="portfolio-item">
+                            <img src="./images/proizvodi/7-thumb.jpg" class="proizvod-thumb" alt="Tasna">
+                            <figcaption class="mask">
+                                <h4>Mala tašna</h4>
+                            </figcaption>
+                            <ul class="external">
+                                <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="col-3 container-thumb">
+                        <div class="portfolio-item">
+                            <img src="./images/proizvodi/8-thumb.jpg" class="proizvod-thumb" alt="Tasna">
+                            <figcaption class="mask">
+                                <h4>Pismo tašna</h4>
+                            </figcaption>
+                            <ul class="external">
+                                <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
         </section>
         <!-- === PROIZVODI SECTION: END === -->
         
@@ -234,7 +334,7 @@
                    </div>
                 </div>
                 <div class="col-6">
-                    <form>
+                    <form name="contactForm" action="" method="POST" onsubmit="">
                         <div class="inputWithIcon">
                             <input type="text" name="ime" placeholder="Ime i prezime" required="">
                             <i class="fas fa-user" aria-hidden="true"></i>
@@ -248,10 +348,13 @@
                             <i class="fas fa-phone" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <textarea rows="6" placeholder="Poruka"></textarea>
+                            <textarea rows="6" name="poruka" placeholder="Poruka" required=""></textarea>
                             <i class="fas fa-pencil-alt" aria-hidden="true"></i>
                         </div>
-                        <button>Pošalji</button>
+                        <!-- <div id="validationMessage">
+                            <i class="fas fa-exclamation-circle"></i> Unesite ime
+                        </div> -->
+                        <button id="sendButton" type="submit">Pošalji</button>
                     </form>
                 </div>
               </div>
