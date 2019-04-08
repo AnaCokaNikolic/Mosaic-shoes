@@ -439,6 +439,40 @@ ul.external li a:hover {
     color: #BB174B;
 }
 
+
+/******************************************
+             COUNTER
+******************************************/
+#counter {
+    margin-top: 50px;
+    background-image: url('../images/counterbg.jpg');
+}
+
+.statistic-counter {
+    color: #fff;
+}
+
+.counter i {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 4px double #fff;
+    color: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 8px;
+    transition:.4s;
+    padding: 28px 26px;
+}
+
+.counter i:hover {
+    border-color: #BB174B;
+    color: #BB174B;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 /******************************************
              TIM
 ******************************************/
@@ -585,11 +619,11 @@ textarea:focus{
     transition:.4s;
 }
 
-.inputWithIcon input:focus + i{
+.inputWithIcon input:focus + i {
     color:#BB174B;
 }
 
-.inputWithIcon textarea:focus + i{
+.inputWithIcon textarea:focus + i {
     color:#BB174B;
 }
 
@@ -634,7 +668,7 @@ footer {
     padding: 8px 15px;
 }
 
-.circle:hover{
+.circle:hover {
     border-color: #BB174B;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);

@@ -1,3 +1,3 @@
-let validation = "Hello from formValidation.js";
+const validation = `Hello from formValidation.js`;
 
 export {validation};
