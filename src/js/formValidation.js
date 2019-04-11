@@ -1,3 +1,3 @@
 const validation = `Hello from formValidation.js`;
 
-export {validation};
+export default validation;

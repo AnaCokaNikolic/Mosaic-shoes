@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mosaic Shoes & Bags">
+    <meta name="keywords" content="mosaic, talook, shoes, bags, design">
+    <meta name="author" content="Ana Milosavljevic">
 
     <title>Mosaic - shoes & bags</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
-    <!-- <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png"> -->
+<!-- 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css"> -->
+
 </head>
 <body>
     <!-- === HEDADER: begin === -->
@@ -28,16 +34,15 @@
             <!-- <div class="container"> -->
                 <div class="row">
                     <div class="col-3 logo">
-                    <a href="#first-section" class="link"><img alt="Mosaic logo"></a>
+                    <a href="#" class="link"><img alt="Mosaic logo"></a>
                     </div>
                     <div class="col-6 nav-right-col"> 
                         <ul class="nav-right navigation">
-                            <!-- <li><a href="#first-section" class="link active">Pocetna</a></li> -->
-                            <li><a href="#usluge" class="link">Usluge</a></li>
-                            <li><a href="#proizvodi" class="link">Proizvodi</a></li>
-                            <li><a href="#o-nama" class="link">O nama</a></li>
-                            <li><a href="#tim" class="link">Tim</a></li>
-                            <li><a href="#kontakt" class="link">Kontakt</a></li>
+                            <li><a href="#usluge" id="usluge-link" class="link">Usluge</a></li>
+                            <li><a href="#proizvodi" id="proizvodi-link" class="link">Proizvodi</a></li>
+                            <li><a href="#o-nama" id="o-nama-link" class="link">O nama</a></li>
+                            <li><a href="#tim" id="tim-link" class="link">Tim</a></li>
+                            <li><a href="#kontakt" id="kontakt-link" class="link">Kontakt</a></li>
                         </ul>
                     </div>
                 
@@ -62,7 +67,7 @@
                 <div class="text-wrapper">
                     <p id="welcome">Dobro došli!</p>
                     <p id="quote">Do uspeha se stiže korak po korak</p><br>
-                    <a id="enter" href="#proizvodi">Krenite</a>
+                    <a href="#proizvodi" id="enter" >Krenite</a>
                 </div>
             </div>
         </section>
@@ -218,6 +223,55 @@
                         </div>
                     </div> 
                 </div>
+
+                <div class="row">
+                    <div class="col-3 container-thumb">
+                        <div class="portfolio-item">
+                            <img src="./images/proizvodi/1-thumb.jpg" class="proizvod-thumb" alt="Cipele">
+                            <figcaption class="mask">
+                            <h4>Cipele</h4>
+                            </figcaption>
+                            <ul class="external">
+                            <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/2-thumb.jpg" class="proizvod-thumb" alt="Sandale">
+                                <figcaption class="mask">
+                                    <h4>Sandale</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/3-thumb.jpg" class="proizvod-thumb" alt="Baletanke">
+                                <figcaption class="mask">
+                                    <h4>Baletanke</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div> 
+                    <div class="col-3 container-thumb">
+                            <div class="portfolio-item">
+                                <img src="./images/proizvodi/4-thumb.jpg" class="proizvod-thumb" alt="Papuce">
+                                <figcaption class="mask">
+                                    <h4>Papuče</h4>
+                                </figcaption>
+                                <ul class="external">
+                                    <li onclick=""><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                    </div> 
+                </div>
+
+
             </div>
         </section>
         <!-- === PROIZVODI SECTION: END === -->
@@ -361,7 +415,7 @@
                     Originalan dizajn, maštovitost, a pre svega odličan kvalitet, oslikava se u svakom njenom proizvodu. </p>
                </div>
                <div class="col-6">
-                    <!-- <video class="video" controls>
+                    <!-- <video class="video" controls autoplay>
                         <source src="./video/mosaic.mp4" type="video/mp4">
                     </video>
                     <p>
@@ -444,7 +498,7 @@
           </div>
         </section>
         <!-- === KONTAKT SECTION: end === -->
-
+        
     </div>
     <!-- === MAIN: end === -->
 
@@ -462,8 +516,6 @@
                     <i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/ateljetalook/" target="_blank" class="white-text circle">
                     <i class="fab fa-instagram" aria-hidden="true"></i></a>
-<!--                    <a href="#" target="_blank" class="adresa circle"><i class="fa fa-google-plus"></i></a>-->
-<!--                    <a href="#" target="_blank" class="adresa circle"><i class="fa fa-twitter"></i></a>-->
                 <a href="https://www.facebook.com/mosaicshoes/videos/401715206872639/" target="_blank" class="white-text circle">
                     <i class="fab fa-youtube"></i></a>
             </div>
@@ -474,10 +526,22 @@
             </div>
         </div>
         </div>
-        <div id="goToTop">
-            <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
-        </div>
     </footer>
     <!-- === FOOTER: end === -->
+    <div id="goToTop">
+        <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+    </div>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    
+
+    <script src="./js/header.js" type="text/javascript" defer></script>
+    <script src="./js/counter.js" type="text/javascript" defer></script>
+    <script src="./js/index.js" type="text/javascript" defer></script> -->
 </body>
 </html>
