@@ -127,13 +127,20 @@ padding: 5px 8px;
 .logo img {
 height: 70%;
 width: 70%;
-content:url(../images/logos/logo.png);
 transition: 0.5s;
 margin: 10px ;
 }
 
-.logo img:hover {
-content:url(../images/logos/logo-pink.png);
+.logo img:last-child {
+   display: none;  
+ }
+
+.logo a:hover img:last-child {
+display: block;  
+}
+
+.logo a:hover img:first-child {
+display: none;  
 }
 
 .nav-right, .nav-user-shop {
@@ -164,7 +171,7 @@ font-weight: 300;
 transition:.4s;
 }
 
-.nav-right li a:hover,  .nav-right li a:active, .nav-right li a:focus, .nav-right li a.active,
+.nav-right li a:hover,  .nav-right li a:active, .nav-right li a.active,
 .nav-user-shop li a:hover, .nav-user-shop li a:active, .nav-user-shop li a:focus {
 color: #BB174B;
 }
