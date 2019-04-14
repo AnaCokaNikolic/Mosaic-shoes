@@ -1,11 +1,10 @@
 
 const path = require(`path`);
 const HtmlWebPackPlugin = require(`html-webpack-plugin`);
-const FaviconsWebpackPlugin = require(`favicons-webpack-plugin`);
 
 module.exports = {
   entry: {
-      main: `./src/index.js`,
+      main: `./src/index`,
     },
     output: {
       path: path.resolve(__dirname, `dist`),
@@ -33,7 +32,7 @@ module.exports = {
         use: `ts-loader`,
       },
       {
-        test: /\.(png|svg|jpg|gif|ico)$/,
+        test: /\.(png|svg|jpg|gif)$/,
         use: [
           `file-loader`,
         ],
@@ -74,7 +73,6 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: `./src/index.html`,
       filename: `./index.html`,
-    }),
-    new FaviconsWebpackPlugin(`./src/images/favicon.png`),
-  ],
+      favicon: `./src/images/favicon.png`,
+    })],
 };

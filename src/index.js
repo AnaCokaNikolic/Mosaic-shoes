@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import './css/style.css';
 import './css/media.css';
 import './js/header';

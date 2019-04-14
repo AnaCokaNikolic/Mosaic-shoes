@@ -2,7 +2,7 @@
   "name": "final",
   "version": "1.0.0",
   "description": "Zavrsni projekat",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode production"
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
+    "@types/node": "^11.13.4",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
@@ -29,7 +30,6 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "favicons-webpack-plugin": "0.0.9",
     "file-loader": "^3.0.1",
     "gsap": "^2.1.2",
     "html-loader": "^0.5.5",
