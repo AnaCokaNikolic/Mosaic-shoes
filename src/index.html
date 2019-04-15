@@ -420,26 +420,25 @@
                    </div>
                 </div>
                 <div class="col-6">
-                    <form name="contactForm" action="" method="POST" onsubmit="">
+                    <form id="contactForm" name="contactForm" action="#kontakt"  onsubmit="">
                         <div class="inputWithIcon">
-                            <input type="text" name="ime" placeholder="Ime i prezime" required="">
+                            <input type="text" name="ime" placeholder="Ime i prezime" required="" id="formIme">
                             <i class="fas fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="email" name="email" placeholder="Email" required="">
+                            <input type="email" name="email" placeholder="Email" required="" id="formEmail">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="tel" name="telefon" placeholder="Telefon" required="">
+                            <input type="tel" name="telefon" placeholder="Telefon" required="" id="formTel">
                             <i class="fas fa-phone" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <textarea rows="6" name="poruka" placeholder="Poruka" required=""></textarea>
+                            <textarea rows="6" name="poruka" placeholder="Poruka" required="" id="formPoruka"></textarea>
                             <i class="fas fa-pencil-alt" aria-hidden="true"></i>
                         </div>
-                        <!-- <div id="validationMessage">
-                            <i class="fas fa-exclamation-circle"></i> Unesite ime
-                        </div> -->
+                        <div id="validationMessage">
+                        </div>
                         <button id="sendButton" type="submit">Pošalji</button>
                     </form>
                 </div>
@@ -458,47 +457,47 @@
     </div>
     <!-- === MAIN: end === -->
 
-            <!-- === COUNTER SECTION: begin === -->
-            <section id="counter" class="counter">
-                <div class="container">
+    <!-- === COUNTER SECTION: begin === -->
+    <section id="counter" class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
                     <div class="row">
-                        <div class="text-center">
-                            <div class="row">
-                                <div class="col-4 ">
-                                    <div>
-                                        <a href="https://www.facebook.com/mosaicshoes/" target="_blank" class="white-text">
-                                            <i class="fab fa-facebook-f fa-lg"></i>
-                                            <h2 id="followersFB" class="statistic-counter">5454</h2>
-                                            <h4 class="white-text">Total follows</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-4">
-                                    <div class="white-text">
-                                        <a href="https://www.facebook.com/mosaicshoes/" target="_blank" class="white-text">
-                                            <i class="fas fa-thumbs-up fa-lg"></i>
-                                            <h2 id="likesFB" class="statistic-counter">4343</h2>
-                                            <h4 class="white-text">Total Likes</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-4 ">
-                                    <div class="white-text">
-                                        <a href="https://www.instagram.com/ateljetalook/" target="_blank" class="white-text">
-                                            <i class="fab fa-instagram fa-lg"></i>
-                                            <h2 id="followersInst" class="statistic-counter">3232</h2>
-                                            <h4 class="white-text">Followers</h4>
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="col-4 ">
+                            <div>
+                                <a href="https://www.facebook.com/mosaicshoes/" target="_blank" class="white-text">
+                                    <i class="fab fa-facebook-f fa-lg"></i>
+                                    <h2 id="followersFB" class="statistic-counter">5454</h2>
+                                    <h4 class="white-text">Total follows</h4>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="col-4">
+                            <div class="white-text">
+                                <a href="https://www.facebook.com/mosaicshoes/" target="_blank" class="white-text">
+                                    <i class="fas fa-thumbs-up fa-lg"></i>
+                                    <h2 id="likesFB" class="statistic-counter">4343</h2>
+                                    <h4 class="white-text">Total Likes</h4>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="col-4 ">
+                            <div class="white-text">
+                                <a href="https://www.instagram.com/ateljetalook/" target="_blank" class="white-text">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                    <h2 id="followersInst" class="statistic-counter">3232</h2>
+                                    <h4 class="white-text">Followers</h4>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- === COUNTER SECTION: end === -->
+            </div>
+        </div>
+    </section>
+    <!-- === COUNTER SECTION: end === -->
 
     <!-- === FOOTER: begin === -->
     <footer>

@@ -12,22 +12,22 @@ new ScrollMagic.Scene({triggerElement: `#sendButton`})
 
                     const countUp1 = new CountUp(`followersFB`, countDataFollowersFB);
                     if (!countUp1.error) {
-                      countUp1.start();
+                        countUp1.start();
                     } else {
-                      console.error(countUp1.error);
+                        console.error(countUp1.error);
                     }
 
                     const countUp2 = new CountUp(`likesFB`, countDataLikesFB);
                     if (!countUp2.error) {
-                      countUp2.start();
+                        countUp2.start();
                     } else {
-                      console.error(countUp2.error);
+                        console.error(countUp2.error);
                     }
 
                     const countUp3 = new CountUp(`followersInst`, countDataFollowersInst);
                     if (!countUp3.error) {
-                      countUp3.start();
+                        countUp3.start();
                     } else {
-                      console.error(countUp3.error);
+                        console.error(countUp3.error);
                     }
                 });
