@@ -354,6 +354,10 @@ figcaption.mask h4 {
    text-align: left;
 }
 
+.price {
+   float: right;
+}
+
 ul.external {
    list-style: outside none none;
    margin: 0;

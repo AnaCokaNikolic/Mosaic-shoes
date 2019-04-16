@@ -4,6 +4,7 @@
   "description": "Zavrsni projekat",
   "main": "index",
   "scripts": {
+    "server": "json-server --watch db.json",
     "start": "webpack-dev-server",
     "build": "webpack --mode production"
   },

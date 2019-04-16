@@ -4,6 +4,7 @@ import './css/style.css';
 import './css/media.css';
 import './js/header';
 import './js/counter';
+import './js/displayItems';
 // import $ from 'jquery';
 // import axios from 'axios';
 
