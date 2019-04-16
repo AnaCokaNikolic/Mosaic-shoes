@@ -7,7 +7,7 @@ const _api = axios.create({
 
 async function _render(item) {
 $(`#itemContainer`).append(` <div class="col-3 container-thumb">
-                            <div class="portfolio-item">
+                            <div class="item">
                                 <img src="${item.img1Url}" class="proizvod-thumb" alt="${item.name}">
                                 <figcaption class="mask">
                                 <h4>${item.name} <span class="price"> ${item.price.toLocaleString(`sr-RS`)}</span></h4>
@@ -24,7 +24,6 @@ async function displayItems() {
     const items = await response.data;
     for (const item of items) {
         _render(item);
-        console.log(`displayItems`);
     }
 }
 displayItems();

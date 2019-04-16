@@ -1,6 +1,18 @@
 import ScrollMagic from 'scrollmagic';
 import { CountUp } from 'countup.js';
 
+let i = 0;
+const txt = `Made by Ana Milosavljević`;
+const speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById(`author`).innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
 const controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({triggerElement: `#sendButton`})
@@ -30,4 +42,5 @@ new ScrollMagic.Scene({triggerElement: `#sendButton`})
                     } else {
                         console.error(countUp3.error);
                     }
+                    setTimeout(typeWriter, 2000);
                 });
