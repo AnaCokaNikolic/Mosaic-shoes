@@ -39,6 +39,9 @@ $(`#goToTop`).on(`click`, (event) => {
 const controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({triggerElement: `#enter`})
+                .setClassToggle(`#goToTop a`, `active`)
+                .addTo(controller);
+new ScrollMagic.Scene({triggerElement: `#enter`})
                 .setClassToggle(`.fixed-top`, `shrink`)
                 .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#enter`})
