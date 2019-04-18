@@ -140,7 +140,46 @@
                 </div>
             </div>
         </section>
-        <!-- === PROIZVODI SECTION: END === -->
+        <!-- === PROIZVODI SECTION: end === -->
+
+        <!-- === PROIZVOD MODAL: begin === -->
+        <div id="itemModal" class="modal">
+            <form class="modal-content animate" action="">
+                <p class="close" title="Zatvori"> X </p>
+                <div class="row ">
+                    <div class="col-7 slideConatainer">
+                        <div class="slideConatainer">
+                            <img id="expandedImg" src="./images/proizvodi/1-thumb.jpg" style="width:100%">
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./images/proizvodi/1-thumb.jpg" alt="" style="width:100%" class="demo">
+                            </div>
+                            <div class="col-4">
+                                <img src="./images/proizvodi/2-thumb.jpg" alt="" style="width:100%" class="demo">
+                            </div>
+                            <div class="col-4">
+                                <img src="./images/proizvodi/3-thumb.jpg" alt="" style="width:100%" class="demo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <h4 id="itemName">Cipele</h4>
+                        <h4 id="itemPrice">11480</h4>
+                        <h3 id="itemDescription">Cipele i tašne MOSAIC su ručno izrađene sa puno ljubavi starih majstora, od najkvalitetnije italijanske kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod.</h3>
+                        <input id="37" type="radio" name="size" value="37">
+                        <input id="38" type="radio" name="size" value="38">
+                        <input id="39" type="radio" name="size" value="39">
+                        <input id="40" type="radio" name="size" value="37">
+                        <input id="41" type="radio" name="size" value="38">
+                        <input id="42" type="radio" name="size" value="39">
+                        <input id="addToCartButton" type="submit" value="Dodaj u korpu" >
+                    </div>
+                </div>
+            </form> 
+        </div>
+       
+        <!-- === PROIZVODI MODAL: end === -->
         
         <!-- === O NAMA SECTION: begin === -->
         <section id="o-nama">
@@ -399,7 +438,7 @@
     <!-- === FOOTER: end === -->
 
     <div id="goToTop">
-        <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+        <a href="#" title="Na vrh stranice"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
     </div>
 </body>
 </html>

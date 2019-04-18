@@ -9,5 +9,7 @@ import './css/media.css';
 import './js/header';
 import './js/responsiveNav';
 import './js/displayItems';
+import './js/itemModal';
 import './js/counter';
 import './js/formValidation';
+import './js/displaySingleItem';

@@ -103,33 +103,33 @@ html, body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
- [class*="col-"] {
-    width: 100%;
- }
+   [class*="col-"] {
+      width: 100%;
+   }
 
- html, body { 
-    font-size: 14px;
-    line-height: 1.3;
- }
+   html, body { 
+      font-size: 14px;
+      line-height: 1.3;
+   }
 
- h2 {
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0;
- }
+   h2 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0;
+   }
 
- h4 {
-    letter-spacing: 0;
-    font-size: 16px;
-    font-weight: 700;
-    padding-top: 16px;
- }
+   h4 {
+      letter-spacing: 0;
+      font-size: 16px;
+      font-weight: 700;
+      padding-top: 16px;
+   }
 
- h3, h5 {
-    font-size: 14px;
- }
+   h3, h5 {
+      font-size: 14px;
+   }
 
- .fixed-top {
+   .fixed-top {
    background-color: rgba(12,12,12,0.9);
    position: fixed;
    top: 0;
@@ -140,38 +140,38 @@ html, body {
    transition: .5s;
    transition-delay: .5s;
    overflow: hidden;
-}
+   }
 
-.fixed-top .col-3 { 
+   .fixed-top .col-3 { 
    width: 45%;
-}
+   }
 
-.fixed-top .col-6 { 
+   .fixed-top .col-6 { 
    width: 10%;
-}
+   }
 
-.logo img {
+   .logo img {
    height: 80%;
    width: 80%;
    margin: 6px ;
-}
+   }
 
-.nav-right {
+   .nav-right {
    text-align: center;
    position: absolute;
    top: 100px;
    left: 20%;
    right: 20%;
-}
+   }
 
-.nav-right li {
+   .nav-right li {
    opacity: 0;               
    transition: .5s;
    transition-delay: 0s;
    width: 100%;
-}
+   }
 
-.nav-right li a {
+   .nav-right li a {
    text-decoration: none;
    text-transform: uppercase;
    color: #ffffff;
@@ -179,9 +179,9 @@ html, body {
    font-family: sans-serif;
    display: block;
    padding: 15px;
-}
+   }
 
-body input + label {
+   body input + label {
    display: block;
    position: fixed;
    top: 25px;
@@ -189,9 +189,9 @@ body input + label {
    height: 20px;
    width: 16px;
    z-index: 9999;
- }
+   }
 
- body input + label span {
+   body input + label span {
    position: absolute;
    width: 100%;
    height: 2px;
@@ -201,136 +201,136 @@ body input + label {
    display: block;
    background: #fff;
    transition: .5s;
- }
+   }
 
- body input + label span:first-child {
+   body input + label span:first-child {
    top: 3px;
- }
+   }
 
- body input + label span:last-child {
+   body input + label span:last-child {
    top: 16px;
- }
+   }
 
- body label:hover {
+   body label:hover {
    cursor: pointer;
- }
+   }
 
- body label:hover span {
+   body label:hover span {
    background:  #BB174B;
- }
- body input:checked + label span {
+   }
+   body input:checked + label span {
    opacity: 0;
    top: 50%;
- }
+   }
 
- body input:checked + label span:first-child {
+   body input:checked + label span:first-child {
    opacity: 1;
    transform: rotate(405deg);
- } 
+   } 
 
- body input:checked + label span:last-child {
+   body input:checked + label span:last-child {
    opacity: 1;
    transform: rotate(-405deg);
- } 
+   } 
 
-#user {
+   #user {
    display: inline-block ;
    position: fixed;
    top: 25px;
    right: 120px; 
    z-index: 9999;
-}
+   }
 
-#cart {
+   #cart {
    display: inline-block;
    position: fixed;
    top: 25px;
    right: 70px; 
    z-index: 9999;
-}
+   }
 
- #first-section {
-    padding-top: 520px;
- }
+   #first-section {
+      padding-top: 520px;
+   }
 
- #usluge {
-    padding-top: 100px;
- }
+   #usluge {
+      padding-top: 100px;
+   }
 
- .icon {
+   .icon {
       height: 115px;
       width: 115px;
       padding: 37px 34px;
       margin-top: 30px;
- }
+   }
 
- .text-usluge {
-    padding: 0 125px;
- }
+   .text-usluge {
+      padding: 0 125px;
+   }
 
- #proizvodi {
-    padding-top: 100px;
- }
-
- #proizvodi .col-3 {
-    width: 50%;
- }
-
- #o-nama {
-    padding-top: 100px;
- }
-
- .col-2 {
-    display: none;
- }
-
- .hide {
-    display: block;
-    float: right;
- }
-
- .oNama-left .hide {
-    float: left;
-  }
-
-.oNama-right h4 {
-  padding-right: 200px;
- }
-
- .oNama-right p {
-    padding: 10px 200px 0 120px;
- }
-
- .oNama-left p {
-    padding: 10px 120px 0 200px;
- }
-
- .oNama-left h4{
-    padding-left: 200px;
- }
-
- .oNama-img {
-    margin: 0 20px;
- }
-
- .oNama-left {
-    margin-top: -30px;
- }
-
-  #tim {
+   #proizvodi {
       padding-top: 100px;
-  }
+   }
 
-  .tim-img {
+   #proizvodi .col-3 {
+      width: 50%;
+   }
+
+   #o-nama {
+      padding-top: 100px;
+   }
+
+   .col-2 {
+      display: none;
+   }
+
+   .hide {
+      display: block;
+      float: right;
+   }
+
+   .oNama-left .hide {
+      float: left;
+   }
+
+   .oNama-right h4 {
+   padding-right: 200px;
+   }
+
+   .oNama-right p {
+      padding: 10px 200px 0 120px;
+   }
+
+   .oNama-left p {
+      padding: 10px 120px 0 200px;
+   }
+
+   .oNama-left h4{
+      padding-left: 200px;
+   }
+
+   .oNama-img {
+      margin: 0 20px;
+   }
+
+   .oNama-left {
+      margin-top: -30px;
+   }
+
+   #tim {
+      padding-top: 100px;
+   }
+
+   .tim-img {
       width: 220px;
       height: auto;
       border-radius: 50%;
       margin-top: 20px;
-  }
+   }
 
-  #tim .text-center {
+   #tim .text-center {
       margin: 0 140px;
-  }
+   }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -400,8 +400,6 @@ body input + label {
       margin-top: -30px;
    }
 }
-
-
 
 /* Custom, iPhone */
 @media only screen and (max-width : 320px) {

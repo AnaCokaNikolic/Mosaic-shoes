@@ -2,6 +2,14 @@
 "items": [
     {
       "id": 1,
+      "descriptionId": 1,
+      "imagesId": 1,
+      "37": true,
+      "38": false,
+      "39": true,
+      "40": true,
+      "41": false,
+      "42": false,
       "name": "Cipele",
       "category": "cipele",
       "price": 10480,
@@ -9,6 +17,14 @@
     },
     {
         "id": 2,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": true,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": false,
+        "42": false,
         "name": "Sandale",
         "category": "sandale",
         "price": 9600,
@@ -16,6 +32,14 @@
       },
       {
         "id": 3,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": true,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": false,
+        "42": false,
         "name": "Baletanke",
         "category": "baletanke",
         "price": 9500,
@@ -23,6 +47,14 @@
       },
       {
         "id": 4,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Papuče",
         "category": "papuce",
         "price": 7400,
@@ -30,6 +62,14 @@
       },
       {
         "id": 5,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Mala tašna",
         "category": "tasne",
         "price": 8480,
@@ -37,6 +77,14 @@
       },
       {
         "id": 6,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Pismo tašna",
         "category": "tasne",
         "price": 2040,
@@ -44,6 +92,14 @@
       },
       {
         "id": 7,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Mala tašna",
         "category": "tasne",
         "price": 5480,
@@ -51,6 +107,14 @@
       },
       {
         "id": 8,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Tašna",
         "category": "tasne",
         "price": 4000,
@@ -58,27 +122,78 @@
       },
       {
         "id": 9,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Cipele",
         "category": "cipele",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/1-thumb.jpg"
       },{
         "id": 10,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Sandale",
         "category": "sandale",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/2-thumb.jpg"
       },{
         "id": 11,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": false,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": true,
+        "42": true,
         "name": "Baletanke",
         "category": "baletanke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/3-thumb.jpg"
       },{
         "id": 12,
+        "descriptionId": 2,
+        "imagesId": 2,
+        "37": true,
+        "38": false,
+        "39": true,
+        "40": true,
+        "41": false,
+        "42": false,
         "name": "Papuče",
         "category": "papuce",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/4-thumb.jpg"
       }
-    ]}
+    ],
+  "itemDescription": [
+    {
+      "id": 1,
+      "text": "Ovo je siri opis proizvoda.  Cipele i tašne MOSAIC su ručno izrađene sa puno ljubavi starih majstora, od najkvalitetnije italijanske kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod."
+    },{
+      "id": 2,
+      "text": "Ovo je siri opis proizvoda.  Cipele i tašne MOSAIC su ručno izrađene sa puno ljubavi starih majstora, od najkvalitetnije italijanske kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod."
+    }
+  ],
+  "itemImages":[
+    {
+      "id": 1,
+      "imgUrl": ["./src/images/proizvodi/4-thumb.jpg", "./src/images/proizvodi/5-thumb.jpg", "./src/images/proizvodi/6-thumb.jpg"]
+    },{
+      "id": 2,
+      "imgUrl": ["./src/images/proizvodi/1-thumb.jpg", "./src/images/proizvodi/2-thumb.jpg", "./src/images/proizvodi/3-thumb.jpg"]
+    }
+  ]
+}
