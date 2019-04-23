@@ -13,3 +13,7 @@ import './js/itemModal';
 import './js/counter';
 import './js/formValidation';
 import './js/displaySingleItem';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();

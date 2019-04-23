@@ -46,6 +46,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "axios": "^0.18.0",
     "countup.js": "^2.0.4",
     "eslint-config-airbnb": "^17.1.0",

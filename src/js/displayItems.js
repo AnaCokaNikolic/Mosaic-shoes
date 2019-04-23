@@ -6,7 +6,7 @@ const api = axios.create({
   });
 
 async function displayItems(item) {
-$(`#itemContainer`).append(` <div class="col-3 container-thumb">
+$(`#itemContainer`).append(` <div class="col-3 container-thumb" data-aos="zoom-in" data-aos-duration="1300">
                             <div class="item">
                                 <img src="${item.img1Url}" class="proizvod-thumb" alt="${item.name}">
                                 <figcaption class="mask">

@@ -88,7 +88,7 @@
                     </div>
                     </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4" data-aos="fade-down">
                         <div class="text-center">
                             <div class="icon">
                                 <i class="fas fa-camera-retro fa-3x"></i> 
@@ -100,7 +100,7 @@
                                  Omogućite klijentima da bolje sagledaju Vaše proizvode i usluge kao i da ih razlikuju od konkurentskih.</p>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4" data-aos="fade-down">
                         <div>
                             <div class="icon">
                                 <i class="fas fa-th fa-3x"></i> 
@@ -110,7 +110,7 @@
                                 murano stakla ili keramike. Sve mozaik skulpture su unikatne i rade se u dogovoru sa klijentom.</p>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4" data-aos="fade-down">
                         <div>
                             <div class="icon">
                                     <i class="fas fa-briefcase fa-3x"></i>
@@ -144,33 +144,62 @@
 
         <!-- === PROIZVOD MODAL: begin === -->
         <div id="itemModal" class="modal">
-            <form class="modal-content animate" action="">
-                <span class="close" title="Close Modal">&times;</span>
-                <!-- <div class="imgcontainer">
-                
-                <img src="3a2594a3018c90a808fc608ca612ceef.jpg" alt="Cipele" class="itemImage">
-                </div>
-            
-                <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-            
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+            <form id="itemForm" class="modal-content animate" action="">
+                <p class="close" title="Zatvori"> X </p>
+                <div class="row ">
+                    <div class="col-7 slideConatainer">
+                        <div class="slideConatainer">
+                            <img id="expandedImg" >
+                        </div>
+                        <div class="row">
+                            <div class="col-4 demo">
+                                <img id="img1" alt="" >
+                            </div>
+                            <div class="col-4 demo">
+                                <img id="img2" alt="" >
+                            </div>
+                            <div class="col-4 demo">
+                                <img id="img3" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <h2 id="itemName"></h2>
+                        <h4 id="itemPrice"></h4>
+                        <h3 id="itemDescription"></h3>
+                        
+                        <label class="sizeContainer 37">
+                            <input type="radio" name="radio" value="37"> 
+                            <span class="checkmark"><p>37</p></span>
+                        </label>
+                        <label class="sizeContainer 38"> 
+                            <input type="radio" name="radio" value="38"> 
+                            <span class="checkmark"><p>38</p></span>
+                        </label>
+                        <label class="sizeContainer 39"> 
+                            <input type="radio" name="radio" value="39"> 
+                            <span class="checkmark"><p>39</p></span>
+                        </label>
+                        <label class="sizeContainer 40"> 
+                            <input type="radio" name="radio" value="40"> 
+                            <span class="checkmark"><p>40</p></span>
+                        </label>
+                        <label class="sizeContainer 41"> 
+                            <input type="radio" name="radio" value="41"> 
+                            <span class="checkmark"><p>41</p></span>
+                        </label>
+                        <label class="sizeContainer 42"> 
+                            <input type="radio" name="radio" value="42"> 
+                            <span class="checkmark"><p>42</p></span>
+                        </label>
                     
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
+                        <button id="addToCartButton" type="submit" >Dodaj u korpu</button>
+                    </div>
                 </div>
-            
-                <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form> -->
+            </form> 
         </div>
-        <!-- === PROIZVODI MODAL: begin === -->
+       
+        <!-- === PROIZVODI MODAL: end === -->
         
         <!-- === O NAMA SECTION: begin === -->
         <section id="o-nama">
@@ -429,7 +458,7 @@
     <!-- === FOOTER: end === -->
 
     <div id="goToTop">
-        <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+        <a href="#" title="Na vrh stranice"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
     </div>
 <script type="text/javascript" src="main.bundle.js"></script></body>
 </html>
