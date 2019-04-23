@@ -144,36 +144,56 @@
 
         <!-- === PROIZVOD MODAL: begin === -->
         <div id="itemModal" class="modal">
-            <form class="modal-content animate" action="">
+            <form id="itemForm" class="modal-content animate" action="">
                 <p class="close" title="Zatvori"> X </p>
                 <div class="row ">
                     <div class="col-7 slideConatainer">
                         <div class="slideConatainer">
-                            <img id="expandedImg" src="./images/proizvodi/1-thumb.jpg" style="width:100%">
+                            <img id="expandedImg" >
                         </div>
                         <div class="row">
-                            <div class="col-4">
-                                <img src="./images/proizvodi/1-thumb.jpg" alt="" style="width:100%" class="demo">
+                            <div class="col-4 demo">
+                                <img id="img1" alt="" >
                             </div>
-                            <div class="col-4">
-                                <img src="./images/proizvodi/2-thumb.jpg" alt="" style="width:100%" class="demo">
+                            <div class="col-4 demo">
+                                <img id="img2" alt="" >
                             </div>
-                            <div class="col-4">
-                                <img src="./images/proizvodi/3-thumb.jpg" alt="" style="width:100%" class="demo">
+                            <div class="col-4 demo">
+                                <img id="img3" alt="" >
                             </div>
                         </div>
                     </div>
                     <div class="col-5">
-                        <h4 id="itemName">Cipele</h4>
-                        <h4 id="itemPrice">11480</h4>
-                        <h3 id="itemDescription">Cipele i tašne MOSAIC su ručno izrađene sa puno ljubavi starih majstora, od najkvalitetnije italijanske kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod.</h3>
-                        <input id="37" type="radio" name="size" value="37">
-                        <input id="38" type="radio" name="size" value="38">
-                        <input id="39" type="radio" name="size" value="39">
-                        <input id="40" type="radio" name="size" value="37">
-                        <input id="41" type="radio" name="size" value="38">
-                        <input id="42" type="radio" name="size" value="39">
-                        <input id="addToCartButton" type="submit" value="Dodaj u korpu" >
+                        <h2 id="itemName"></h2>
+                        <h4 id="itemPrice"></h4>
+                        <h3 id="itemDescription"></h3>
+                        
+                        <label class="sizeContainer 37">
+                            <input type="radio" name="radio" value="37"> 
+                            <span class="checkmark"><p>37</p></span>
+                        </label>
+                        <label class="sizeContainer 38"> 
+                            <input type="radio" name="radio" value="38"> 
+                            <span class="checkmark"><p>38</p></span>
+                        </label>
+                        <label class="sizeContainer 39"> 
+                            <input type="radio" name="radio" value="39"> 
+                            <span class="checkmark"><p>39</p></span>
+                        </label>
+                        <label class="sizeContainer 40"> 
+                            <input type="radio" name="radio" value="40"> 
+                            <span class="checkmark"><p>40</p></span>
+                        </label>
+                        <label class="sizeContainer 41"> 
+                            <input type="radio" name="radio" value="41"> 
+                            <span class="checkmark"><p>41</p></span>
+                        </label>
+                        <label class="sizeContainer 42"> 
+                            <input type="radio" name="radio" value="42"> 
+                            <span class="checkmark"><p>42</p></span>
+                        </label>
+                    
+                        <button id="addToCartButton" type="submit" >Dodaj u korpu</button>
                     </div>
                 </div>
             </form> 

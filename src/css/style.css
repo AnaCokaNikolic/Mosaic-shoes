@@ -367,11 +367,9 @@ transition: opacity .5s ease-out;
 
 .container-thumb:hover .proizvod-thumb {
    opacity: 0.7;
-   cursor: pointer;
 }
 
 .item {
-   cursor: pointer;
    overflow: hidden;
    position: relative;
    width: 100%;
@@ -424,6 +422,7 @@ ul.external {
 
 ul.external li {
    display: inline-block;
+   cursor: pointer;
 }
 
 ul.external li a {
@@ -431,6 +430,7 @@ ul.external li a {
    color: #818181;
    display: block;
    padding: 10px 18px 13px;
+   cursor: pointer;
    
    -webkit-transition: all 0.5s ease 0s;
       -moz-transition: all 0.5s ease 0s;
@@ -473,17 +473,16 @@ ul.external li a:hover {
    height: 100%;
    overflow: auto;
    background-color: rgb(0,0,0);
-   background-color: rgba(0,0,0,0.4);
-   padding-top: 60px;
+   background-color: rgba(0,0,0,0.6);
  }
  
  .modal-content {
    background-color: #fff;
-   margin: 5% auto 15% auto;
+   margin: 12% auto;
    border: 1px solid #888;
    width: 60%; 
-   height: 670px;
    position: relative;
+   padding: 20px;
  }
  
  .close {
@@ -519,31 +518,137 @@ ul.external li a:hover {
 
 .slideConatainer {
    position: relative;
+   padding: 0;
+   margin: 0;
+   border: 0.5px solid #333;
 }
- 
+
 .demo {
    opacity: 0.6;
    cursor: pointer;
+   padding: 0;
+   margin: 0;
+   border: 0.5px solid #333;
+   -webkit-transition: all 0.5s ease 0s;
+   -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+     -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
 }
  
 .demo:hover {
    opacity: 1;
 }
 
-
-
-#addToCartButton{
-   margin: 8px 0;
-   padding: 8px;
-   color: #fff;
-   border-radius: 4px;
-   border: 2px solid #BB174B;
+.demo img, #expandedImg {
    width: 100%;
+}
+
+#itemName {
+  text-align: left;
+  padding: 10px 30px 10px 30px;
+}
+
+#itemPrice {
+  text-align: left;
+  color: #BB174B;
+  padding: 0 30px 40px 30px;
+}
+
+#itemPrice span {
+   color: gray;
+   font-family: 'Roboto', serif;
+   font-size: 22px;
+   font-weight: 200;
+}
+
+#itemDescription {
+   padding: 40px;
+}
+
+.sizeContainer {
+   display: block;
+   position: relative;
+   padding-left: 60px;
+   margin-bottom: 12px;
+   margin-top: 65px;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   float: left;
+ }
+ 
+ .sizeContainer input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+ }
+ 
+ .checkmark {
+   position: absolute;
+   top: 0;
+   left: 75%;
+   height: 22px;
+   width: 22px;
+   background-color: #eee;
+   border-radius: 50%;
+   -webkit-transition: all 0.4s ease 0s;
+   -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+     -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+ }
+
+ .checkmark:hover {
+   background-color: #888;
+ }
+ 
+ .sizeContainer input:checked ~ .checkmark {
+   background-color: #BB174B !important;
+ }
+ 
+ .checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+ }
+ 
+ .sizeContainer input:checked ~ .checkmark:after {
+   display: block;
+ }
+ 
+ .sizeContainer .checkmark:after {
+   top: 7px;
+   left: 7px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+ }
+ 
+ .sizeContainer p{
+   margin-top: 32px;
+   text-align: center;
+ }
+ 
+#addToCartButton{
    float: right;
+   width: 95%;
+   margin-top: 100px;
+   padding: 8px;
    background-color: #BB174B;
+   border: 2px solid #BB174B;
+   border-radius: 4px;
+   color: #fff;
    text-transform: uppercase;
    letter-spacing: 2px;
-   transition:.4s;
+   -webkit-transition: all 0.4s ease 0s;
+   -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+     -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
 }
 
 #addToCartButton:hover{
@@ -554,7 +659,6 @@ ul.external li a:hover {
 
 #addToCartButton:active {
    border-color:#BB174B;
-   color: #6FBDF7;
 }
 
 /******************************************
@@ -871,9 +975,5 @@ footer {
 #goToTop a.active {
    opacity: 1;
 }
-
-/******************************************
-            FOOTER
-******************************************/
 
 

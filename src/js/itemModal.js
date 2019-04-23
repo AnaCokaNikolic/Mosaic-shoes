@@ -4,17 +4,22 @@ import $ from 'jquery';
 $(`#itemContainer`).click((e) => {
     if (e.target.classList.contains(`itemCart`) || e.target.classList.contains(`fa-shopping-cart`)) {
         e.preventDefault();
-        $(`#itemModal`).attr( `style`, `display: block;`);
+        $(`#itemModal`).prop( `style`, `display: block;`);
+        $(`body`).prop( `style`, `overflow: hidden;`);
     }
 });
 
 $(`.close`).click(() => {
-    $(`#itemModal`).attr( `style`, `display: none;`);
+    $(`#itemModal`).prop( `style`, `display: none;`);
+    $(`body`).prop( `style`, `overflow :auto;`);
+    $(`#itemForm`)[0].reset();
 });
 
 $(window).click((e) => {
     if (e.target === $(`#itemModal`)[0]) {
-        $(`#itemModal`).attr( `style`, `display: none;`);
+        $(`#itemModal`).prop( `style`, `display: none;`);
+        $(`body`).prop( `style`, `overflow :auto;`);
+        $(`#itemForm`)[0].reset();
     }
 });
 
