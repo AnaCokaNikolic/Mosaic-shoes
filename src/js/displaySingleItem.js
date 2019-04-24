@@ -13,7 +13,7 @@ async function displaySingleItem(item, description, images) {
   $(`#img1`).attr(`src`, images.imgUrl[0]);
   $(`#img2`).attr(`src`, images.imgUrl[1]);
   $(`#img3`).attr(`src`, images.imgUrl[2]);
-
+  $(`#addToCartButton`).attr(`data-id`, item.id);
   if (item.size37 !== true) {
     $(`.37 input`).prop(`disabled`, true);
     $(`.37 p`).css(`color`, `#cdcdcd`);
@@ -136,42 +136,43 @@ async function displaySingleItem(item, description, images) {
 }
 
 async function getImages(id) {
-    try {
-        const response = await api.get(`/itemImages?id=${id}`);
-        const images = response.data;
-        //
-        return images[0];
+  try {
+      const response = await api.get(`/itemImages?id=${id}`);
+      const images = response.data;
+      return images[0];
   } catch (e) {
     console.log(e);
   }
 }
 
 async function getDescription(id) {
-    try {
-        const response = await api.get(`/itemDescription?id=${id}`);
-        const descriptions = response.data;
-        const description = descriptions[0].text;
-        return description;
+  try {
+      const response = await api.get(`/itemDescription?id=${id}`);
+      const descriptions = response.data;
+      const description = descriptions[0].text;
+      return description;
   } catch (e) {
     console.log(e);
   }
 }
 
 async function getSingleItem(id) {
-    const response = await api.get(`/items?id=${id}`);
-    const item = await response.data;
-    const description = await getDescription(item[0].descriptionId);
-    const images = await getImages(item[0].imagesId);
-    displaySingleItem(item[0], description, images);
-  }
+  const response = await api.get(`/items?id=${id}`);
+  const item = await response.data;
+  const description = await getDescription(item[0].descriptionId);
+  const images = await getImages(item[0].imagesId);
+  displaySingleItem(item[0], description, images);
+}
 
 function getItemId(e) {
-    if (e.target.classList.contains(`itemCart`) || e.target.classList.contains(`fa-shopping-cart`)) {
-        const id = JSON.parse(sessionStorage.getItem(`item id`));
-        getSingleItem(id);
-        }
+  if (e.target.classList.contains(`itemCart`) || e.target.classList.contains(`fa-shopping-cart`)) {
+      const id = JSON.parse(sessionStorage.getItem(`item id`));
+      getSingleItem(id);
+      }
 }
+
 
 $(document).ready(() => {
     $(`#itemContainer`).click(getItemId);
+    // $(`#addToCartButton`).click(addToCart);
 });

@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
-const regExIme = /^(([A-za-z]+[\s]{1}[A-za-z]+)|([A-Za-z]+))$/;
-const regExEmail = /\S+@\S+\.\S+/;
-const regExTel = /^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?){0,})(?:[\-\.\ \\\/]?[\-\.\ \\\/]?(\d+))?$/;
+const regExIme = /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,11}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,11})?$/;
+const regExEmail = /^[a-zšđčćž\-.]{3,}@[a-zšđčćž]{3,}.[a-zšđčćž]{2,3}$/;
+const regExTel = /^\d{3}\/(\d{3}-?\d{4}|\d{4}-?\d{3})$/;
 
 $(`#sendButton`).click((e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ $(`#sendButton`).click((e) => {
         $(`#formTel`).focus();
     } else if (!regExTel.test($(`#formTel`).val().trim())) {
         $(`#validationMessage`).html(``);
-        $(`#validationMessage`).html(`<i class="fas fa-exclamation-circle"></i> Unesite validan broj telefona`).show().fadeOut(4000);
+        $(`#validationMessage`).html(`<i class="fas fa-exclamation-circle"></i> Unesite validan broj telefona (xxx/xxx-xxxx)`).show().fadeOut(4000);
         $(`#formTel`).focus();
     } else if ($(`#formPoruka`).val().trim() === ``) {
         $(`#validationMessage`).html(``);

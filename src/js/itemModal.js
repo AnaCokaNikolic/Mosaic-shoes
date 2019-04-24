@@ -11,14 +11,14 @@ $(`#itemContainer`).click((e) => {
 
 $(`.close`).click(() => {
     $(`#itemModal`).prop( `style`, `display: none;`);
-    $(`body`).prop( `style`, `overflow :auto;`);
+    $(`body`).prop( `style`, `overflow-y :auto;`);
     $(`#itemForm`)[0].reset();
 });
 
 $(window).click((e) => {
     if (e.target === $(`#itemModal`)[0]) {
         $(`#itemModal`).prop( `style`, `display: none;`);
-        $(`body`).prop( `style`, `overflow :auto;`);
+        $(`body`).prop( `style`, `overflow-y :auto;`);
         $(`#itemForm`)[0].reset();
     }
 });

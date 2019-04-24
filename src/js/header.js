@@ -34,7 +34,11 @@ $(`#goToTop`).on(`click`, (event) => {
     event.preventDefault();
     $(`html, body`).animate({scrollTop: $(`#first-section`).offset().top}, 1000);
 });
-
+$(`#cart-link`).on(`click`, (event) => {
+    event.preventDefault();
+    $(`.nav-shop li a`).toggleClass(`active`);
+    $(`#cart`).toggleClass(`open`);
+});
 
 const controller = new ScrollMagic.Controller();
 
@@ -51,7 +55,7 @@ new ScrollMagic.Scene({triggerElement: `#enter`})
                 .setClassToggle(`.nav-right li`, `shrink`)
                 .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#enter`})
-                .setClassToggle(`.nav-user-shop li`, `shrink`)
+                .setClassToggle(`.nav-shop li`, `shrink`)
                 .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#usluge`, duration: `100%` })
                 .setClassToggle(`#usluge-link`, `active`)

@@ -50,11 +50,11 @@ html, body {
    padding: 12px 2px;
 }
 
-.nav-right li a, .nav-user-shop li a {
+.nav-right li a, .nav-shop li a {
    font-size: 10px;
 }
 
-.nav-user-shop li {
+.nav-shop li {
    padding: 12px 18px;
 }
 
@@ -241,7 +241,7 @@ html, body {
    z-index: 9999;
    }
 
-   #cart {
+   #cart-link {
    display: inline-block;
    position: fixed;
    top: 25px;
@@ -411,7 +411,7 @@ html, body {
       right: 100px;
    }
    
-   #cart {
+   #cart-link {
       top: 25px;
       right: 60px; 
    }

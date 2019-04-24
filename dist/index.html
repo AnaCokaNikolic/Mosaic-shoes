@@ -43,9 +43,9 @@
                 </div>
             
                 <div class="col-3">
-                    <ul class="nav-user-shop">
-                        <li><a href="#" id="user"><i class="fas fa-user fa-2x"></i></a></li>
-                        <li><a href="#" id="cart"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                    <ul class="nav-shop">
+                        <!-- <li><a href="#" id="user"><i class="fas fa-user fa-2x"></i></a></li> -->
+                        <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -61,6 +61,34 @@
                 <a href="#kontakt" id="kontakt-link" class="link">Kontakt</a>
             </div>
         </div>
+    </div>
+    <div id="cart">
+        <form  id="forma" name="forma" method="GET" action="" onsubmit=""> 
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Naziv</th>
+                        <th>Veličina</th>
+                        <th>Cena</th>
+                        <th>Izbaci</th>
+                    </tr>
+                </thead>
+
+                <tbody class="cartItems">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Ukupno:</td>
+                        <td id="total">0</td>
+                        <td>dinara</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="submitButton">
+                <button type="submit" class="checkOut">Naruči</button>
+            </div>
+        </form>
     </div>
    
     <!-- === MAIN: begin === --> 
@@ -88,9 +116,11 @@
                     </div>
                     </div>
                 <div class="row">
-                    <div class="col-4" data-aos="fade-down">
+                    <div class="col-4">
                         <div class="text-center">
-                            <div class="icon">
+                            <div class="icon" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2200">
                                 <i class="fas fa-camera-retro fa-3x"></i> 
                             </div>
                             <h4>Fotografija</h4><br>
@@ -100,9 +130,11 @@
                                  Omogućite klijentima da bolje sagledaju Vaše proizvode i usluge kao i da ih razlikuju od konkurentskih.</p>
                         </div>
                     </div>
-                    <div class="col-4" data-aos="fade-down">
+                    <div class="col-4">
                         <div>
-                            <div class="icon">
+                            <div class="icon" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2200">
                                 <i class="fas fa-th fa-3x"></i> 
                             </div>
                             <h4>Izrada mozaika</h4><br>
@@ -110,9 +142,11 @@
                                 murano stakla ili keramike. Sve mozaik skulpture su unikatne i rade se u dogovoru sa klijentom.</p>
                         </div>
                     </div>
-                    <div class="col-4" data-aos="fade-down">
+                    <div class="col-4">
                         <div>
-                            <div class="icon">
+                            <div class="icon" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2200">
                                     <i class="fas fa-briefcase fa-3x"></i>
                             </div>
                             <h4>Dizajn obuće i tašni</h4><br>
@@ -192,8 +226,11 @@
                             <input type="radio" name="radio" value="42"> 
                             <span class="checkmark"><p>42</p></span>
                         </label>
-                    
+                        <div class="shopItemMessage"><h3 id="shopItemMessage"> </h3></div>
+
+                        <h3 id="shopItemMessage"> </h3>
                         <button id="addToCartButton" type="submit" >Dodaj u korpu</button>
+                        
                     </div>
                 </div>
             </form> 
@@ -211,7 +248,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-5 oNama-right">             
+                    <div class="col-5 oNama-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="500">             
                         <div class="hide">
                             <img class=" oNama-img" src="8eba41ad42e5c99ef724609e57093602.jpg" alt="slika">
                         </div>
@@ -238,7 +275,7 @@
                     <div class="col-2">
                         <img class="oNama-img" src="80ab04e58243816b72717126d475ca3d.jpg" alt="slika">
                     </div>
-                    <div class="col-5 oNama-left">
+                    <div class="col-5 oNama-left" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="400">
                         <div class="hide">
                             <img class="oNama-img" src="80ab04e58243816b72717126d475ca3d.jpg" alt="slika">
                         </div>
@@ -255,7 +292,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-5 oNama-right">
+                    <div class="col-5 oNama-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
                         <div class="hide">
                             <img class="oNama-img" src="4b476cf568e155fdaad404bbd9be1b40.jpg" alt="slika">
                         </div>
@@ -291,7 +328,7 @@
                </div>
              </div>
              <div class="row">
-               <div class="col-6">
+               <div class="col-6" data-aos="zoom-in-up" data-aos-duration="1300" data-aos-offset="400">
                  <img class="tim-img" src="c23e5f860b50351ee34e224d07778192.jpg" alt="tatjana">
                  <h4 class="text-center">Tatjana Luković</h4>
                  <h5 class="text-center">dipl. fotograf</h5>
@@ -299,7 +336,7 @@
                     teži ka tome da stvori nove ideje, da promeni stereotipe i da svojim radovima privuče pažnju onih kojima su odredjeni proizvodi namenjeni.
                     Originalan dizajn, maštovitost, a pre svega odličan kvalitet, oslikava se u svakom njenom proizvodu. </p>
                </div>
-               <div class="col-6">
+               <div class="col-6" data-aos="zoom-in-up" data-aos-duration="1300" data-aos-offset="400">
                     <!-- <video class="video" controls autoplay>
                         <source src="./video/mosaic.mp4" type="video/mp4">
                     </video>
@@ -328,7 +365,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-6">
+                <div class="col-6" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="400">
                     <div>
                         <ul class="adresa">
                             <li class="adresa-info"><a class="white-text" href="https://www.google.rs/maps/place/Katarine+Bogdanovic%CC%81,+Kragujevac/@44.023876,20.9120929,17z/data=!3m1!4b1!4m5!3m4!1s0x4757213208ddf8bf:0x18467d310791f3f2!8m2!3d44.023876!4d20.9142816?hl=en" target="_blank">
@@ -358,7 +395,7 @@
                         </ul>
                    </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="400">
                     <form id="contactForm" name="contactForm" action="#kontakt"  onsubmit="">
                         <div class="inputWithIcon">
                             <input type="text" name="ime" placeholder="Ime i prezime" required="" id="formIme">
@@ -385,7 +422,7 @@
             </div>
           <div class="row">
             <div class="col-12">
-                <div class="mapa">               
+                <div class="mapa" data-aos="flip-up"  data-aos-duration="1300" data-aos-offset="200">               
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.879915401292!2d20.912092915722635!3d44.023875979110386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4757213208ddf8bf%3A0x18467d310791f3f2!2sKatarine+Bogdanovic%CC%81%2C+Kragujevac!5e0!3m2!1sen!2srs!4v1510052152678" width="1200" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
               </div>
