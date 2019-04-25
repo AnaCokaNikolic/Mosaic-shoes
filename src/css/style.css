@@ -263,17 +263,17 @@ color: #BB174B;
    right: 0;
    top: 67px;
    z-index: 5;
-   overflow-x: hidden;
    transition: 0.5s;
    padding-top: 10px;
    background-color: rgba(255, 255, 255, 0.7); 
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   /* border: 3px solid rgba(12,12,12,0.9); */
    margin: 0;
 }
 
 #cart.open {
    width: 350px;
+   max-height: 85%;
+   overflow-y: auto; 
 }
 
 #cart h4 {

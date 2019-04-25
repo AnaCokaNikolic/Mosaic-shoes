@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 const regExIme = /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,11}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,11})?$/;
-const regExEmail = /^[a-zšđčćž\-.]{3,}@[a-zšđčćž]{3,}.[a-zšđčćž]{2,3}$/;
+const regExEmail =  /\S+@\S+\.\S+/;
 const regExTel = /^\d{3}\/(\d{3}-?\d{4}|\d{4}-?\d{3})$/;
 
 $(`#sendButton`).click((e) => {
