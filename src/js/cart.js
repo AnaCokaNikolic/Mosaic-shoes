@@ -9,29 +9,53 @@ const api = axios.create({
 let total = 0;
 let removeId = 0;
 
-function removeFadeOut(el, speed) {
-    const seconds = speed / 1000;
-    el.style.transition = `opacity ${seconds}s ease`;
-    el.style.opacity = 0;
-    setTimeout(() => {
-        el.remove();
-    }, speed);
-}
 
-function removeItem() {
-    removeFadeOut(this.parentNode.parentNode, 1000);
-    const price = this.parentNode.previousElementSibling.innerHTML;
+function subtractTotal(price) {
     const options = {
         startVal: total,
         duration: 1,
     };
     total -= price;
-    const countUpTotal = new CountUp(`total`, total, options);
-    if (!countUpTotal.error) {
-        countUpTotal.start();
-    } else {
-        console.error(countUpTotal.error);
-    }
+    const countUpTotal1 = new CountUp(`total`, total, options);
+    countUpTotal1.start();
+}
+
+function removeItem() {
+    const row = this.parentNode.parentNode;
+    row.style.transition = `all 1s ease`;
+    row.style.height = 0;
+    row.style.opacity = 0;
+    setTimeout(() => {
+        row.remove();
+    }, 1000);
+
+    const price = this.parentNode.previousElementSibling.innerHTML;
+    subtractTotal(price);
+}
+
+function addTotal(price) {
+    const options = {
+        startVal: total,
+        duration: 1,
+    };
+    total += price;
+    const countUpTotal2 = new CountUp(`total`, total, options);
+    countUpTotal2.start();
+}
+
+function renderItems(img1Url, name, size, price) {
+    $(`#cartItems`).append(`<tr>
+        <td class="cartItemImage">
+            <img src="${img1Url}" >
+        </td>
+        <td>${name} <br><span>Veličina: </span> ${size}</td>
+        <td>${price}</td>
+        <td class="${removeId}"></td>
+        </tr>`);
+    const remove = $(`<a></a>`).html(`<i class="far fa-trash-alt" ></i>`).appendTo($(`.${removeId}`));
+    remove.get(0).addEventListener(`click`, removeItem);
+    removeId++;
+    addTotal(price);
 }
 
 async function displayItemInCart(id, size) {
@@ -40,30 +64,7 @@ async function displayItemInCart(id, size) {
     const {name} = item[0];
     const {price} = item[0];
     const {img1Url} = item[0];
-    console.log(img1Url, name, size, price);
-    $(`#cartItems`).append(`<tr>
-                                <td id="cartItemImage">
-                                    <img src="${img1Url}" >
-                                </td>
-                                <td id="cartItemName">${name} <br><span>Veličina: </span> ${size}</td>
-                                <td id="cartItemPrice">${price}</td>
-                                <td id="${removeId}"></td>
-                            </tr>`);
-    const remove = $(`<a></a>`, {
-    }).html(`<i class="far fa-trash-alt" ></i>`).appendTo($(`#${removeId}`));
-    remove.get(0).addEventListener(`click`, removeItem);
-    const options = {
-        startVal: total,
-        duration: 1,
-    };
-    total += price;
-    const countUpTotal = new CountUp(`total`, total, options);
-    if (!countUpTotal.error) {
-        countUpTotal.start();
-    } else {
-        console.error(countUpTotal.error);
-    }
-    removeId++;
+    renderItems(img1Url, name, size, price);
 }
 
 function displayMessage() {
@@ -103,7 +104,4 @@ function addToCart(e) {
     }
   }
 
-
-$(document).ready(() => {
-    $(`#addToCartButton`).click(addToCart);
-});
+export { addToCart };

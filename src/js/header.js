@@ -57,6 +57,9 @@ new ScrollMagic.Scene({triggerElement: `#enter`})
 new ScrollMagic.Scene({triggerElement: `#enter`})
                 .setClassToggle(`.nav-shop li`, `shrink`)
                 .addTo(controller);
+new ScrollMagic.Scene({triggerElement: `#enter`})
+                .setClassToggle(`#cart`, `shrink`)
+                .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#usluge`, duration: `100%` })
                 .setClassToggle(`#usluge-link`, `active`)
                 .addTo(controller);

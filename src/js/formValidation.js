@@ -4,7 +4,7 @@ const regExIme = /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,11}\s?([A-ZŠĐŽĆČ][a-zš
 const regExEmail =  /\S+@\S+\.\S+/;
 const regExTel = /^\d{3}\/(\d{3}-?\d{4}|\d{4}-?\d{3})$/;
 
-$(`#sendButton`).click((e) => {
+function formValidation(e) {
     e.preventDefault();
     if ($(`#formIme`).val().trim() === ``) {
         $(`#validationMessage`).html(``);
@@ -40,4 +40,6 @@ $(`#sendButton`).click((e) => {
         $(`#validationMessage`).html(``);
         $(`#validationMessage`).html(`<i class="fas fa-check-circle"></i> Poruka je poslata. Hvala!`).show().fadeOut(7000);
     }
-});
+}
+
+export { formValidation };
