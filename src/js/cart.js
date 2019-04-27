@@ -1,5 +1,6 @@
 import axios from 'axios';
 import $ from 'jquery';
+import { CountUp } from 'countup.js';
 
 const api = axios.create({
     baseURL: `http://localhost:3000`,
@@ -8,11 +9,29 @@ const api = axios.create({
 let total = 0;
 let removeId = 0;
 
+function removeFadeOut(el, speed) {
+    const seconds = speed / 1000;
+    el.style.transition = `opacity ${seconds}s ease`;
+    el.style.opacity = 0;
+    setTimeout(() => {
+        el.remove();
+    }, speed);
+}
+
 function removeItem() {
-    this.parentNode.parentNode.remove();
+    removeFadeOut(this.parentNode.parentNode, 1000);
     const price = this.parentNode.previousElementSibling.innerHTML;
+    const options = {
+        startVal: total,
+        duration: 1,
+    };
     total -= price;
-    $(`#total`).text(total);
+    const countUpTotal = new CountUp(`total`, total, options);
+    if (!countUpTotal.error) {
+        countUpTotal.start();
+    } else {
+        console.error(countUpTotal.error);
+    }
 }
 
 async function displayItemInCart(id, size) {
@@ -33,8 +52,17 @@ async function displayItemInCart(id, size) {
     const remove = $(`<a></a>`, {
     }).html(`<i class="far fa-trash-alt" ></i>`).appendTo($(`#${removeId}`));
     remove.get(0).addEventListener(`click`, removeItem);
+    const options = {
+        startVal: total,
+        duration: 1,
+    };
     total += price;
-    $(`#total`).text(total);
+    const countUpTotal = new CountUp(`total`, total, options);
+    if (!countUpTotal.error) {
+        countUpTotal.start();
+    } else {
+        console.error(countUpTotal.error);
+    }
     removeId++;
 }
 

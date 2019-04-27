@@ -26,6 +26,7 @@
         <span></span>
     </label>
     <header class="fixed-top topnav" id="myTopnav">
+            
         <nav>
             <div class="row">
                 <div class="col-3 logo">
@@ -48,6 +49,7 @@
                         <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
                     </ul>
                 </div>
+                
             </div>
         </nav>
     </header>
@@ -64,29 +66,21 @@
     </div>
     <div id="cart">
         <form  id="forma" name="forma" method="GET" action="" onsubmit=""> 
-            <table id="tabela">
-                <thead>
-                    <tr>
-                        <th>Foto</th>
-                        <th>Naziv</th>
-                        <th>Veličina</th>
-                        <th>Cena</th>
-                        <th>Izbaci</th>
-                    </tr>
-                </thead>
+            <h4>Vaša korpa</h4>
 
-                <tbody class="cartItems">
+            <table id="tabela">
+                <tbody id="cartItems">
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">Ukupno:</td>
-                        <td id="total">0</td>
-                        <td>dinara</td>
+                        <td colspan="2">Ukupno:</td>
+                        <td id="total"></td>
+                        <td>RSD</td>
                     </tr>
                 </tfoot>
             </table>
             <div class="submitButton">
-                <button type="submit" class="checkOut">Naruči</button>
+                <button id="shopButton" type="submit" class="checkOut">Završi kupovinu</button>
             </div>
         </form>
     </div>

@@ -23,5 +23,6 @@ module.exports = {
         "no-underscore-dangle": 0,
         "no-await-in-loop": 0,
         "no-plusplus": "off",
+        "no-param-reassign": [2, {"props": false}]
     }
 };
