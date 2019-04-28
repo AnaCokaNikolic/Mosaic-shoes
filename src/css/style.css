@@ -312,6 +312,12 @@ td {
    height: 100px;
 }
 
+#shopButton:disabled{
+   background-color: rgb(95, 95, 95);
+   border: 2px solid rgb(95, 95, 95);
+   cursor: auto;
+}
+
 #shopButton{
    display: block;
    margin: 15px auto;
@@ -331,6 +337,11 @@ td {
      -o-transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s;
 }
+#shopButton:disabled{
+   background-color: rgb(95, 95, 95);
+   border: 2px solid rgb(95, 95, 95);
+   cursor: auto;
+}
 
 #shopButton:hover{
    -webkit-transform: scale(0.95);
@@ -338,6 +349,11 @@ td {
    transform: scale(0.95);
 }
 
+#shopButton:hover:disabled{
+   -webkit-transform: none;
+   -ms-transform: none;
+   transform: none;
+}
 
 /******************************************
           FIRST SECTION
@@ -436,11 +452,30 @@ transition: opacity .5s ease-out;
 ******************************************/
 
 #proizvodi {
-   padding-top: 100px;
+   padding: 100px 0;
 }
 
 .container-thumb {
    position: relative;
+}
+.categories {
+   text-align: center;
+   margin: 20px;
+}
+
+.categories a {
+   letter-spacing: 1px;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   color: #333;
+   font-size: 18px;
+   font-weight: 700;
+   padding: 20px;
+   cursor: pointer;
+}
+
+.categories a:hover, .categories a:focus, .categories a:active, .categories a.active {
+   color: #BB174B;
 }
 
 .proizvod-thumb {
@@ -650,7 +685,7 @@ ul.external li a:hover {
 }
 
 #itemDescription {
-   padding: 40px;
+   padding: 0 40px;
 }
 
 .sizeContainer {

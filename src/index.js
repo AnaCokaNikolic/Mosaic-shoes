@@ -20,7 +20,38 @@ import { formValidation } from './js/formValidation';
 AOS.init();
 
 $(document).ready(() => {
-    getItems();
+    getItems(`all`);
+    // $(`.all`).click(() => {
+    //     getItems(`all`);
+    // });
+    // $(`.salonke`).click(() => {
+    //     getItems(`salonke`);
+    // });
+    // $(`.sandale`).click(() => {
+    //     getItems(`sandale`);
+    // });
+    // $(`.baletanke`).click(() => {
+    //     getItems(`baletanke`);
+    // });
+    // $(`.papuce`).click(() => {
+    //     getItems(`papuce`);
+    // });
+    // $(`.cipele`).click(() => {
+    //     getItems(`cipele`);
+    // });
+
+    // function activeLink() {
+    //     $(this).addClass(`active`);
+    // }
+
+    const categories = $(`.categories a`);
+    categories.click((e) => {
+        categories.removeClass(`active`);
+        getItems($(e.target).attr(`class`));
+        $(e.target).addClass(`active`);
+    });
+
+
     $(`#addToCartButton`).click(addToCart);
     $(`#sendButton`).click(formValidation);
 });

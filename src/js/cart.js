@@ -8,7 +8,19 @@ const api = axios.create({
 
 let total = 0;
 let removeId = 0;
+let itemCount = 0;
 
+function displayItemCount(count) {
+    $(`#itemCount`).text(`(${count})`);
+    $(`#itemCount`).text(`(${count})`);
+    if (count === 0) {
+        $(`#shopButton`).prop(`disabled`, true);
+        $(`#itemCount`).hide();
+    } else {
+        $(`#shopButton`).prop(`disabled`, false);
+        $(`#itemCount`).show();
+    }
+}
 
 function subtractTotal(price) {
     const options = {
@@ -18,6 +30,16 @@ function subtractTotal(price) {
     total -= price;
     const countUpTotal1 = new CountUp(`total`, total, options);
     countUpTotal1.start();
+}
+
+function addTotal(price) {
+    const options = {
+        startVal: total,
+        duration: 1,
+    };
+    total += price;
+    const countUpTotal2 = new CountUp(`total`, total, options);
+    countUpTotal2.start();
 }
 
 function removeItem() {
@@ -31,16 +53,8 @@ function removeItem() {
 
     const price = this.parentNode.previousElementSibling.innerHTML;
     subtractTotal(price);
-}
-
-function addTotal(price) {
-    const options = {
-        startVal: total,
-        duration: 1,
-    };
-    total += price;
-    const countUpTotal2 = new CountUp(`total`, total, options);
-    countUpTotal2.start();
+    itemCount -= 1;
+    displayItemCount(itemCount);
 }
 
 function renderItems(img1Url, name, size, price) {
@@ -53,9 +67,11 @@ function renderItems(img1Url, name, size, price) {
         <td class="${removeId}"></td>
         </tr>`);
     const remove = $(`<a></a>`).html(`<i class="far fa-trash-alt" ></i>`).appendTo($(`.${removeId}`));
-    remove.get(0).addEventListener(`click`, removeItem);
+    $(remove.get(0)).one(`click`, removeItem);
     removeId++;
     addTotal(price);
+    itemCount += 1;
+    displayItemCount(itemCount);
 }
 
 async function displayItemInCart(id, size) {

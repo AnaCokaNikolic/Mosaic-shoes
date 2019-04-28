@@ -45,7 +45,7 @@
             
                 <div class="col-3">
                     <ul class="nav-shop">
-                        <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                        <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i></a><span id="itemCount" class="text-kontakt"></span></li>
                     </ul>
                 </div>
                 
@@ -63,6 +63,8 @@
             </div>
         </div>
     </div>
+
+    <!-- === CART: begin === --> 
     <div id="cart">
         <form  id="forma" name="forma" method="GET" action="" onsubmit=""> 
             <h4>Vaša korpa</h4>
@@ -79,10 +81,11 @@
                 </tfoot>
             </table>
             <div class="submitButton">
-                <button id="shopButton" type="submit" class="checkOut">Završi kupovinu</button>
+                <button id="shopButton" type="submit" class="checkOut" disabled>Završi kupovinu</button>
             </div>
         </form>
     </div>
+    <!-- === CART: end === --> 
    
     <!-- === MAIN: begin === --> 
     <div class="main">
@@ -161,6 +164,16 @@
                     <div class="col-12">
                         <h2 class="text-center">Proizvodi</h2>
                         <h3 class="text-center">Obojite svoje korake</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 categories">
+                        <a class="all active">SVI PROIZVODI</a> |
+                        <a class="salonke">SALONKE</a> |
+                        <a class="sandale">SANDALE</a> |
+                        <a class="baletanke">BALETANKE</a> |
+                        <a class="papuce">PAPUČE</a> |
+                        <a class="cipele">DUBOKE CIPELE</a>
                     </div>
                 </div>
                 <div id="itemContainer" class="row">

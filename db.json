@@ -10,14 +10,14 @@
       "size40": true,
       "size41": false,
       "size42": false,
-      "name": "Cipele",
-      "category": "cipele",
+      "name": "Salonke",
+      "category": "salonke",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-1.jpg"
     },
     {
         "id": 2,
-        "descriptionId": 2,
+        "descriptionId": 3,
         "imagesId": 2,
         "size37": false,
         "size38": true,
@@ -25,14 +25,14 @@
         "size40": false,
         "size41": true,
         "size42": true,
-        "name": "Sandale",
-        "category": "sandale",
+        "name": "Papuče",
+        "category": "papuce",
         "price": 9600,
         "img1Url": "./src/images/proizvodi/shoe-2.jpg"
       },
       {
         "id": 3,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 3,
         "size37": true,
         "size38": true,
@@ -40,14 +40,14 @@
         "size40": true,
         "size41": true,
         "size42": true,
-        "name": "Baletanke",
-        "category": "baletanke",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 9500,
         "img1Url": "./src/images/proizvodi/shoe-3.jpg"
       },
       {
         "id": 4,
-        "descriptionId": 2,
+        "descriptionId": 4,
         "imagesId": 4,
         "size37": true,
         "size38": false,
@@ -55,14 +55,14 @@
         "size40": true,
         "size41": false,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Baletanke",
+        "category": "baletanke",
         "price": 7400,
         "img1Url": "./src/images/proizvodi/shoe-4.jpg"
       },
       {
         "id": 5,
-        "descriptionId": 2,
+        "descriptionId": 4,
         "imagesId": 5,
         "size37": false,
         "size38": true,
@@ -70,14 +70,14 @@
         "size40": false,
         "size41": true,
         "size42": true,
-        "name": "Mala tašna",
-        "category": "tasne",
+        "name": "Baletanke",
+        "category": "baletanke",
         "price": 8480,
         "img1Url": "./src/images/proizvodi/shoe-5.jpg"
       },
       {
         "id": 6,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 6,
         "size37": false,
         "size38": true,
@@ -85,14 +85,14 @@
         "size40": false,
         "size41": true,
         "size42": true,
-        "name": "Pismo tašna",
-        "category": "tasne",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 2040,
         "img1Url": "./src/images/proizvodi/shoe-6.jpg"
       },
       {
         "id": 7,
-        "descriptionId": 2,
+        "descriptionId": 4,
         "imagesId": 7,
         "size37": false,
         "size38": true,
@@ -100,14 +100,14 @@
         "size40": false,
         "size41": true,
         "size42": true,
-        "name": "Mala tašna",
-        "category": "tasne",
+        "name": "Baletanke",
+        "category": "baletanke",
         "price": 5480,
         "img1Url": "./src/images/proizvodi/shoe-7.jpg"
       },
       {
         "id": 8,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 8,
         "size37": true,
         "size38": true,
@@ -115,14 +115,14 @@
         "size40": true,
         "size41": false,
         "size42": true,
-        "name": "Tašna",
-        "category": "tasne",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 4000,
         "img1Url": "./src/images/proizvodi/shoe-8.jpg"
       },
       {
         "id": 9,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 9,
         "size37": true,
         "size38": true,
@@ -130,13 +130,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Cipele",
-        "category": "cipele",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-9.jpg"
       },{
         "id": 10,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 10,
         "size37": true,
         "size38": true,
@@ -144,13 +144,13 @@
         "size40": true,
         "size41": true,
         "size42": true,
-        "name": "Sandale",
-        "category": "sandale",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-10.jpg"
       },{
         "id": 11,
-        "descriptionId": 2,
+        "descriptionId": 3,
         "imagesId": 11,
         "size37": true,
         "size38": true,
@@ -158,13 +158,13 @@
         "size40": true,
         "size41": true,
         "size42": true,
-        "name": "Baletanke",
-        "category": "baletanke",
+        "name": "Papuče",
+        "category": "papuce",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-11.jpg"
       },{
         "id": 12,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 12,
         "size37": true,
         "size38": true,
@@ -172,13 +172,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-12.jpg"
       },{
         "id": 13,
-        "descriptionId": 2,
+        "descriptionId": 4,
         "imagesId": 13,
         "size37": true,
         "size38": true,
@@ -186,8 +186,8 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Baletanke",
+        "category": "baletanke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-13.jpg"
       },{
@@ -200,13 +200,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Sandale",
+        "category": "sandale",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-14.jpg"
       },{
         "id": 15,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 15,
         "size37": true,
         "size38": true,
@@ -214,13 +214,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-15.jpg"
       },{
         "id": 16,
-        "descriptionId": 2,
+        "descriptionId": 5,
         "imagesId": 16,
         "size37": true,
         "size38": true,
@@ -228,13 +228,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Cipele",
+        "category": "cipele",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-16.jpg"
       },{
         "id": 17,
-        "descriptionId": 2,
+        "descriptionId": 5,
         "imagesId": 17,
         "size37": true,
         "size38": true,
@@ -242,13 +242,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Cipele",
+        "category": "cipele",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-17.jpg"
       },{
         "id": 18,
-        "descriptionId": 2,
+        "descriptionId": 5,
         "imagesId": 18,
         "size37": true,
         "size38": true,
@@ -256,8 +256,8 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Cipele",
+        "category": "cipele",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-18.jpg"
       },{
@@ -270,8 +270,8 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Sandale",
+        "category": "sandale",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-19.jpg"
       },{
@@ -284,13 +284,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Sandale",
+        "category": "sandale",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-20.jpg"
       },{
         "id": 21,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 21,
         "size37": true,
         "size38": true,
@@ -298,8 +298,8 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-21.jpg"
       },{
@@ -312,13 +312,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Sandale",
+        "category": "sandale",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-22.jpg"
       },{
         "id": 23,
-        "descriptionId": 2,
+        "descriptionId": 4,
         "imagesId": 23,
         "size37": true,
         "size38": true,
@@ -326,13 +326,13 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Baletanke",
+        "category": "baletanke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-23.jpg"
       },{
         "id": 24,
-        "descriptionId": 2,
+        "descriptionId": 1,
         "imagesId": 24,
         "size37": true,
         "size38": true,
@@ -340,8 +340,8 @@
         "size40": true,
         "size41": true,
         "size42": false,
-        "name": "Papuče",
-        "category": "papuce",
+        "name": "Salonke",
+        "category": "salonke",
         "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-24.jpg"
       }
@@ -349,10 +349,19 @@
   "itemDescription": [
     {
       "id": 1,
-      "text": "Ovo je siri opis proizvoda.  Cipele i tašne MOSAIC su ručno izrađene sa puno ljubavi starih majstora, od najkvalitetnije italijanske kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod."
+      "text": "MOSAIC salonke su ručno izrađene sa puno ljubavi starih majstora. Originalan dizajn, maštovitost, a pre svega odličan kvalitet su odlike ovog proizvoda. Izrađene su od najkvalitetnije italijanske kože. Svaki model je unikatan. Visina štikle je 10cm."
     },{
       "id": 2,
-      "text": "Cipele su ručno izrađene sa puno ljubavi starih majstora, od najkvalitetnije italijanske kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod."
+      "text": "MOSAIC sandale pored udobnosti i originalnog dizajna, krase jaki kontrasti i kreativnost koju potpisuje Tatjana Luković. Ručno su izrađene od kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod. Visina štikle je 6cm."
+    },{
+      "id": 3,
+      "text": "Pokažite da ste drugačiji, nosite MOSAIK papuče! Ovaj proizvod je unikatnog dizajna, ručno izrađen od najkvalitetnije italijanske kože. Unesite radost i autentičnost u svakodnevni hod. Visina štikle je 4cm."
+    },{
+      "id": 4,
+      "text": "MOSAIC baletanke su ručno izrađene sa puno ljubavi starih majstora. Originalan dizajn, maštovitost, a pre svega odličan kvalitet su odlike ovog proizvoda. Izrađene su od najkvalitetnije italijanske kože za lagan i udoban svkodnevni hod. Svaki model je unikatan."
+    },{
+      "id": 5,
+      "text": "Duboke cipele su ručno izrađene od najkvalitetnije italijanske kože. Pored udobnosti i originalnog dizajna, krase ih jaki kontrasti i kreativnost koju potpisuje Tatjana Luković. Peta od 4cm garantuje siguran i udoban hod."
     }
   ],
   "itemImages":[

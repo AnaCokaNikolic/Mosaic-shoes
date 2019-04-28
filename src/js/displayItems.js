@@ -15,7 +15,7 @@ function getItemId(e) {
 }
 
 async function displayItems(item) {
-    $(`#itemContainer`).append(` <div class="col-3 container-thumb" data-aos="zoom-in" data-aos-duration="1300">
+    $(`#itemContainer`).append(` <div class="col-3 container-thumb ${item.category}" data-aos="zoom-in" data-aos-duration="1300">
                                 <div class="item">
                                     <img src="${item.img1Url}" class="proizvod-thumb" alt="${item.name}">
                                     <figcaption class="mask">
@@ -29,12 +29,15 @@ async function displayItems(item) {
     $(`#itemContainer`).click(getItemId);
 }
 
-async function getItems() {
-    const response = await api.get(`/items`);
-    const items = await response.data;
-    for (const item of items) {
-        displayItems(item);
+async function getItems(category) {
+    $(`#itemContainer`).children().remove();
+    const path = (category === `all` ? `/items` : `/items?category=${category}`);
+    const response = await api.get(`${path}`);
+        const items = await response.data;
+        for (const item of items) {
+            displayItems(item);
+        }
     }
-}
+
 
 export { getItems };
