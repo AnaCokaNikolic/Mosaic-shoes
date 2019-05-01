@@ -16,7 +16,7 @@ import './js/counter';
 
 import { getItems } from './js/displayItems';
 import { addToCart } from './js/cart';
-import { formValidation } from './js/formValidation';
+import { formValidation, confirmationFormValidation } from './js/formValidation';
 
 AOS.init();
 
@@ -29,8 +29,8 @@ $(document).ready(() => {
     });
 
     $(`#addToCartButton`).click(addToCart);
-    $(`#contactForm`).submit(formValidation);
-
+    $(`#contactForm`).submit(formValidation); //
+    $(`#confirmationButton`).click(confirmationFormValidation);
     const d = new Date();
     const dayOfWeek = d.getDay();
     const hour = d.getHours();

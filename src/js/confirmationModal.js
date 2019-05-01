@@ -24,3 +24,17 @@ $(window).click((e) => {
         $(`#confirmationCartItems`)[0].innerHTML = ``;
     }
 });
+
+$(`.radio`).change(() => {
+    if ($(`#cash`).is(`:checked`)) {
+        $(`#nameOnCard`).prop(`disabled`, true);
+        $(`#cardNumber`).prop(`disabled`, true);
+        $(`#cardExp`).prop(`disabled`, true);
+        $(`#cvvCard`).prop(`disabled`, true);
+    } else if ($(`#card`).is(`:checked`)) {
+        $(`#nameOnCard`).prop(`disabled`, false);
+        $(`#cardNumber`).prop(`disabled`, false);
+        $(`#cardExp`).prop(`disabled`, false);
+        $(`#cvvCard`).prop(`disabled`, false);
+    }
+});

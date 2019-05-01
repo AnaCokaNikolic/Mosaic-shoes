@@ -256,6 +256,24 @@ transition:.4s;
    font-size: 13px;
    transition:.5s;
 }
+#cart-link{
+   position: relative;
+}
+
+#itemCount {
+   display: none;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   top: 8px;
+   left: -8px;
+   background-color:  rgba(186, 23, 74, 0.6),;
+   border: 1px solid rgb(186, 23, 74);
+   border-radius: 50%;
+   padding: 2px;
+   font-size: 10px;
+   font-weight: 600;
+}
 /******************************************
           CART
 ******************************************/
@@ -603,7 +621,7 @@ ul.external li a:hover {
  
  .modal-content {
    background-color: #fff;
-   margin: 12% auto;
+   margin: 70px auto;
    border: 1px solid #888;
    width: 60%; 
    position: relative;
@@ -753,12 +771,12 @@ ul.external li a:hover {
    background: white;
  }
  
- .sizeContainer p{
+ .sizeContainer p {
    margin-top: 32px;
    text-align: center;
  }
 
- .shopItemMessage{
+ .shopItemMessage {
     display: block;
     width: 100%;
     height: 30px;
@@ -766,20 +784,20 @@ ul.external li a:hover {
     margin-top: 200px;
  }
 
- #confirmatinoMessage {
+ #confirmationMessage {
    display: block;
    width: 100%;
    height: 40px;
-   margin-top: 30px;
+   margin-top: 20px;
    padding-left: 20px;
-
+   color: #BB174B;
  }
 
  .shopItemMessage h3, #confirmatinoMessage h3 {
    color: #BB174B;
  }
  
-#addToCartButton, #confirmationButton{
+#addToCartButton, #confirmationButton {
    float: right;
    width: 95%;
    margin-top: 10px;
@@ -966,12 +984,15 @@ ul.external li a:hover {
    line-height: 1.5;
 }
 
+#workingHours {
+   width: 200px;
+}
 .social {
    display: inline-block;
    padding: 4px;
 }
 
-input, textarea{
+input, textarea {
    width:100%;
    border:2px solid #aaa;
    border-radius:4px;
@@ -987,7 +1008,7 @@ input, textarea{
    margin: 20px 0 30px 100px;
 }
 
-#validationMessage{
+.validationMessage {
    display: block;
    float: left;
    width: 65%;
@@ -997,7 +1018,7 @@ input, textarea{
    padding: 8px;
 }
 
-#sendButton{
+#sendButton {
    margin: 8px 0;
    padding: 8px;
    color: #fff;
@@ -1011,7 +1032,7 @@ input, textarea{
    transition:.4s;
 }
 
-#sendButton:hover{
+#sendButton:hover {
    -webkit-transform: scale(0.95);
    -ms-transform: scale(0.95);
    transform: scale(0.95);
@@ -1022,27 +1043,27 @@ input, textarea{
    color: #6FBDF7;
 }
 
-input:focus{
+input:focus {
    border-color:#BB174B;
 }
  
-textarea:focus{
+textarea:focus {
    border-color:#BB174B;
 }
 
-.inputWithIcon input{
+.inputWithIcon input {
    padding-left:40px;
 }
 
-.inputWithIcon textarea{
+.inputWithIcon textarea {
    padding-left:40px;
 }
 
-.inputWithIcon{
+.inputWithIcon {
    position:relative;
 }
 
-.inputWithIcon i{
+.inputWithIcon i {
    position:absolute;
    left:0;
    top:12px;

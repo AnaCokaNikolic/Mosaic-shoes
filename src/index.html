@@ -45,7 +45,7 @@
             
                 <div class="col-3">
                     <ul class="nav-shop">
-                        <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i></a><span id="itemCount" class="text-kontakt"></span></li>
+                        <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i><span id="itemCount" class="text-kontakt">0</span></a></li>
                     </ul>
                 </div>
                 
@@ -184,7 +184,7 @@
 
         <!-- === PROIZVOD MODAL: begin === -->
         <div id="itemModal" class="modal">
-            <form id="itemForm" class="modal-content animate" action="">
+            <form id="itemForm" class="modal-content animate" action="#proizvodi">
                 <p class="close" title="Zatvori"> X </p>
                 <div class="row ">
                     <div class="col-7 slideConatainer">
@@ -270,7 +270,7 @@
                             <i class="fas fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="text" name="adress" placeholder="Adresa" required="" id="deliveryAdress">
+                            <input type="text" name="adress" placeholder="Adresa" required="" id="deliveryAddress">
                             <i class="fas fa-address-card" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
@@ -286,15 +286,15 @@
                             <i class="fas fa-flag" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="tel" name="telefon" placeholder="Telefon" required="" id="formTel">
+                            <input type="tel" name="phone" placeholder="Telefon" required="" id="deliveryTel">
                             <i class="fas fa-phone" aria-hidden="true"></i>
                         </div>
                         <h4>Način plaćanja:</h4>
-                        <input type="radio" name="payment" value="cash" class="radio" checked>Pouzećem
-                        <input type="radio" name="payment" value="card" class="radio" >Karticom<br>
+                        <input id="cash" type="radio" name="payment" value="cash" class="radio" checked>Pouzećem
+                        <input id="card" type="radio" name="payment" value="card" class="radio" >Karticom<br>
                         
                         <div class="inputWithIcon">
-                            <input type="text" name="nameOnCard" placeholder="Ime na kartici" required="" id="nameOn Card" disabled>
+                            <input type="text" name="nameOnCard" placeholder="Ime na kartici" required="" id="nameOnCard" disabled>
                             <i class="fas fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
@@ -314,7 +314,7 @@
                             </div>
                         </div>
                     
-                        <h3 id="confirmatinoMessage"></h3>
+                        <h3 id="confirmationMessage"></h3>
                         <button id="confirmationButton" type="submit" >Potvrdi kupovinu</button>
                         
                     </div>
@@ -498,7 +498,7 @@
                             <textarea rows="6" name="poruka" placeholder="Poruka" required="" id="formPoruka"></textarea>
                             <i class="fas fa-pencil-alt" aria-hidden="true"></i>
                         </div>
-                        <div id="validationMessage">
+                        <div class="validationMessage">
                         </div>
                         <button id="sendButton" type="submit">Pošalji</button>
                     </form>
