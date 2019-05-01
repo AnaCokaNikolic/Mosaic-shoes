@@ -15,9 +15,9 @@ function getItemId(e) {
 }
 
 async function displayItems(item) {
-    $(`#itemContainer`).append(` <div class="col-3 container-thumb ${item.category}" data-aos="zoom-in" data-aos-duration="1300">
+    $(`#itemContainer`).append(` <div class="col-3 itemContainer" data-aos="zoom-in" data-aos-duration="1300">
                                 <div class="item">
-                                    <img src="${item.img1Url}" class="proizvod-thumb" alt="${item.name}">
+                                    <img src="${item.img1Url}" class="item-image" alt="${item.name}">
                                     <figcaption class="mask">
                                     <h4>${item.name} <span class="price"> ${item.price.toLocaleString(`sr-RS`)}</span></h4>
                                     </figcaption>

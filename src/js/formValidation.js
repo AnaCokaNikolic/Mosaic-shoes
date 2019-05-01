@@ -35,10 +35,9 @@ function formValidation(e) {
         $(`#validationMessage`).html(`<i class="fas fa-exclamation-circle"></i> Unesite poruku`).show().fadeOut(4000);
         $(`#formPoruka`).focus();
     } else {
-        // $(`#contactForm`).submit();
-        $(`#contactForm`)[0].reset();
-        $(`#validationMessage`).html(``);
-        $(`#validationMessage`).html(`<i class="fas fa-check-circle"></i> Poruka je poslata. Hvala!`).show().fadeOut(7000);
+            $(`#validationMessage`).html(``);
+            $(`#validationMessage`).html(`<i class="fas fa-check-circle"></i> Poruka je poslata. Hvala!`).show().fadeOut(7000);
+            $(`#contactForm`)[0].reset();
     }
 }
 

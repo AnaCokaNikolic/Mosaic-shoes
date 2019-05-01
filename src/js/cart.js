@@ -30,6 +30,7 @@ function subtractTotal(price) {
     total -= price;
     const countUpTotal1 = new CountUp(`total`, total, options);
     countUpTotal1.start();
+    $(`#confirmationTotal`)[0].innerHTML = total.toLocaleString(`sr-RS`);
 }
 
 function addTotal(price) {
@@ -40,6 +41,7 @@ function addTotal(price) {
     total += price;
     const countUpTotal2 = new CountUp(`total`, total, options);
     countUpTotal2.start();
+    $(`#confirmationTotal`)[0].innerHTML = total.toLocaleString(`sr-RS`);
 }
 
 function removeItem() {
@@ -62,11 +64,11 @@ function renderItems(img1Url, name, size, price) {
         <td class="cartItemImage">
             <img src="${img1Url}" >
         </td>
-        <td>${name} <br><span>Veličina: </span> ${size}</td>
-        <td>${price}</td>
+        <td class"cartItemName">${name} <br><span>Broj: </span> ${size}</td>
+        <td class"cartItemPrice">${price}</td>
         <td class="${removeId}"></td>
         </tr>`);
-    const remove = $(`<a></a>`).html(`<i class="far fa-trash-alt" ></i>`).appendTo($(`.${removeId}`));
+    const remove = $(`<a class="remove"></a>`).html(`<i class="far fa-trash-alt" ></i>`).appendTo($(`.${removeId}`));
     $(remove.get(0)).one(`click`, removeItem);
     removeId++;
     addTotal(price);
@@ -84,7 +86,6 @@ async function displayItemInCart(id, size) {
 }
 
 function displayMessage() {
-    $(`#shopItemMessage`).html(``);
     $.when($(`#shopItemMessage`).html(`<i class="fas fa-check-circle"></i> Proizvod je dodat u korpu. Hvala!`).show().fadeOut(2000))
       .then(() => {
         $(`#itemModal`).fadeOut(500);
@@ -113,11 +114,9 @@ function addToCart(e) {
         displayMessage();
         saveInfoToLocalStorage(e);
         getItemInfo();
-        // sumTotal();
     } else {
-        $(`#validationMessage`).html(``);
-        $(`#shopItemMessage`).html(`<i class="fas fa-exclamation-circle"></i> Izaberite veličinu`).show().fadeOut(3500);
+        $(`#shopItemMessage`).html(`<i class="fas fa-exclamation-circle"></i> Izaberite veličinu`).show().fadeOut(3000);
     }
-  }
+}
 
 export { addToCart };
