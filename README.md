@@ -1,7 +1,20 @@
 # Završni projekat
-## Mosaic - shoes & bags
+![Logo](../images/logos/logo-pink.png)
+## Mosaic - shoes
 
-<b>Minimalna specifikacija</b>
+<b>O projektu</b>
+Web site sa internet prodavnicom gde se korisnik može informisati o domaćem brendu MOSAIC shoes,
+kupiti proizvode ili poslati poruku preko kontakt forme. Sadršaj je responzivan. Namenjeno ženskoj populaciji.
+
+<b>Tehnologije korišćene pri razvoju</b>
+
+<b>Struktura projekta</b>
+
+<b>Pokretanje projekta</b>
+npm i
+npm start
+npm server
+
 - svi projekti moraju biti na GitHub nalozima
 - svi projekti moraju na GitHub-u imati tok razvoja  i čistu istoriju razvoja (završene celine po commit-ovima)
 - README fajl koji sadrzi specifikaciju programa:

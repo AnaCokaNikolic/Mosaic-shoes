@@ -3,7 +3,7 @@
 import $ from 'jquery';
 
 const regExIme = /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,22}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,22})?$/;
-const regExEmail =  /\S+@\S+\.\S+/;
+const regExEmail = /\S+@\S+\.\S+/;
 const regExTel = /^\d{3}\/(\d{3}-?\d{4}|\d{4}-?\d{3})$/;
 const regExAddress = /[\w',-\\/.\s]/;
 const regExZip = /^[1-9]\d{4}$/;
@@ -11,6 +11,7 @@ const regExCity = /[\w',-\\/.\s]/;
 const regExCardNumber = /\d{4}-?\d{4}-?\d{4}-?\d{4}/;
 const regExCardExp = /^((0[1-9])|(1[0-2]))\/(\d{2})$/;
 const regExCardCvv = /^([0-9]{3,4})$/;
+
 function formValidation(e) {
     e.preventDefault();
     if ($(`#formIme`).val().trim() === ``) {
