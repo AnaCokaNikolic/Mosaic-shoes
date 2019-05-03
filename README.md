@@ -1,5 +1,5 @@
 # Završni projekat
-![Logo](../images/logos/logo-pink.png)
+![Logo](./src/images/logos/logo-pink.png)
 ## Mosaic - shoes
 
 <b>O projektu</b>
