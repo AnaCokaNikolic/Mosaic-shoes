@@ -1,3 +1,6 @@
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable import/no-extraneous-dependencies */
+
 import axios from 'axios';
 import $ from 'jquery';
 import { CountUp } from 'countup.js';
@@ -65,7 +68,7 @@ function removeItem() {
 function renderItems(img1Url, name, size, price) {
     $(`#cartItems`).append(`<tr>
         <td class="cartItemImage">
-            <img src="${img1Url}" >
+            <img src="${img1Url}" alt="${name}">
         </td>
         <td class"cartItemName">${name} <br><span>Broj: </span> ${size}</td>
         <td class"cartItemPrice">${price}</td>

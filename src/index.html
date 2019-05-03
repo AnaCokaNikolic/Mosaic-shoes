@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Mosaic Shoes & Bags">
-    <meta name="keywords" content="mosaic, talook, shoes, bags, design">
+    <meta name="keywords" content="mosaic, talook, shoes, design">
     <meta name="author" content="Ana Milosavljevic">
 
-    <title>Mosaic - shoes & bags</title>
+    <title>Mosaic - shoes</title>
     <link rel="shortcut icon" type="image/x-icon" href="<%=htmlWebpackPlugin.files.favicon%>">
     <!-- <link href="{%=o.htmlWebpackPlugin.files.favicon%}" rel="shortcut icon"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -30,16 +30,16 @@
         <nav>
             <div class="row">
                 <div class="col-3 logo">
-                <a href="#" class="link"><img src="./images/logos/logo.png" alt="Mosaic logo"><img src="./images/logos/logo-pink.png" alt="Mosaic logo"></a>
+                <a href="#" class="link" id="logoLink"><img src="./images/logos/logo.png" alt="Mosaic logo"><img src="./images/logos/logo-pink.png" alt="Mosaic logo"></a>
                 </div>
                 
                 <div class="col-6 nav-right-col"> 
                     <ul class="nav-right navigation">
-                        <li><a href="#usluge" id="usluge-link" class="link">Usluge</a></li>
-                        <li><a href="#proizvodi" id="proizvodi-link" class="link">Proizvodi</a></li>
-                        <li><a href="#o-nama" id="o-nama-link" class="link">O nama</a></li>
-                        <li><a href="#tim" id="tim-link" class="link">Tim</a></li>
-                        <li><a href="#kontakt" id="kontakt-link" class="link">Kontakt</a></li>
+                        <li><a href="#usluge" id="uslugeLink" class="link">Usluge</a></li>
+                        <li><a href="#proizvodi" id="proizvodiLink" class="link">Proizvodi</a></li>
+                        <li><a href="#o-nama" id="oNamaLink" class="link">O nama</a></li>
+                        <li><a href="#tim" id="timLink" class="link">Tim</a></li>
+                        <li><a href="#kontakt" id="kontaktLink" class="link">Kontakt</a></li>
                     </ul>
                 </div>
             
@@ -146,9 +146,9 @@
                                     <i class="fas fa-briefcase fa-3x"></i>
                             </div>
                             <h4>Dizajn obuće i tašni</h4><br>
-                            <p class="text-usluge">MOSAIC cipele i tašne pored udobnosti i originalnog dizajna, 
+                            <p class="text-usluge">MOSAIC cipele pored udobnosti i originalnog dizajna, 
                                 krase jaki kontrasti i kreativnost koju potpisuje Tatjana Luković. 
-                                Cipele i tašne MOSAIC su ručno izrađene sa puno ljubavi starih majstora, 
+                                Cipele MOSAIC su ručno izrađene sa puno ljubavi starih majstora, 
                                 od najkvalitetnije italijanske kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod. </p>
                         </div>
                     </div>
@@ -233,8 +233,6 @@
                             <span class="checkmark"><p>42</p></span>
                         </label>
                         <div class="shopItemMessage"><h3 id="shopItemMessage"> </h3></div>
-
-                        <h3 id="shopItemMessage"> </h3>
                         <button id="addToCartButton" type="submit" >Dodaj u korpu</button>
                         
                     </div>
@@ -294,29 +292,27 @@
                         <input id="card" type="radio" name="payment" value="card" class="radio" >Karticom<br>
                         
                         <div class="inputWithIcon">
-                            <input type="text" name="nameOnCard" placeholder="Ime na kartici" required="" id="nameOnCard" disabled>
+                            <input type="text" name="nameOnCard" placeholder="Ime na kartici" required="" id="nameOnCard" class="cardInfo" disabled>
                             <i class="fas fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="text" name="cardNumber" placeholder="Broj kartice" required="" id="cardNumber" disabled>
+                            <input type="text" name="cardNumber" placeholder="Broj kartice" required="" id="cardNumber" class="cardInfo" disabled>
                             <i class="fas fa-credit-card" aria-hidden="true"></i>
                         </div>
                         <div class="cardExp">
                             <div class="inputWithIcon">
-                                <input type="text" name="cardExp" placeholder="Važi do:" required="" id="cardExp" disabled>
+                                <input type="text" name="cardExp" placeholder="Važi do:" required="" id="cardExp" class="cardInfo" disabled>
                                 <i class="fas fa-calendar-alt" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="cvvCard">
                             <div class="inputWithIcon">
-                                <input type="text" name="cvvCard" placeholder="CVV" required="" id="cvvCard" disabled>
+                                <input type="text" name="cvvCard" placeholder="CVV" required="" id="cvvCard" class="cardInfo" disabled>
                                 <i class="fas fa-lock" aria-hidden="true"></i>
                             </div>
                         </div>
-                    
-                        <h3 id="confirmationMessage"></h3>
+                        <div class="confirmationMessage"><h3 id="confirmationMessage"></h3></div>
                         <button id="confirmationButton" type="submit" >Potvrdi kupovinu</button>
-                        
                     </div>
                 </div>
             </form> 

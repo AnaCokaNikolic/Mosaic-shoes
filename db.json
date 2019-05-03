@@ -8,7 +8,7 @@
       "size38": false,
       "size39": true,
       "size40": true,
-      "size41": false,
+      "size41": true,
       "size42": false,
       "name": "Salonke",
       "category": "salonke",
@@ -54,7 +54,7 @@
         "size39": true,
         "size40": true,
         "size41": false,
-        "size42": false,
+        "size42": true,
         "name": "Baletanke",
         "category": "baletanke",
         "price": 7400,
@@ -72,7 +72,7 @@
         "size42": true,
         "name": "Baletanke",
         "category": "baletanke",
-        "price": 8480,
+        "price": 7450,
         "img1Url": "./src/images/proizvodi/shoe-5.jpg"
       },
       {
@@ -87,7 +87,7 @@
         "size42": true,
         "name": "Salonke",
         "category": "salonke",
-        "price": 2040,
+        "price": 10480,
         "img1Url": "./src/images/proizvodi/shoe-6.jpg"
       },
       {
@@ -102,7 +102,7 @@
         "size42": true,
         "name": "Baletanke",
         "category": "baletanke",
-        "price": 5480,
+        "price": 7480,
         "img1Url": "./src/images/proizvodi/shoe-7.jpg"
       },
       {
@@ -117,7 +117,7 @@
         "size42": true,
         "name": "Salonke",
         "category": "salonke",
-        "price": 4000,
+        "price": 11300,
         "img1Url": "./src/images/proizvodi/shoe-8.jpg"
       },
       {
@@ -160,7 +160,7 @@
         "size42": true,
         "name": "Papuče",
         "category": "papuce",
-        "price": 10480,
+        "price": 9500,
         "img1Url": "./src/images/proizvodi/shoe-11.jpg"
       },{
         "id": 12,
@@ -244,7 +244,7 @@
         "size42": false,
         "name": "Cipele",
         "category": "cipele",
-        "price": 10480,
+        "price": 11600,
         "img1Url": "./src/images/proizvodi/shoe-17.jpg"
       },{
         "id": 18,
@@ -258,7 +258,7 @@
         "size42": false,
         "name": "Cipele",
         "category": "cipele",
-        "price": 10480,
+        "price": 11600,
         "img1Url": "./src/images/proizvodi/shoe-18.jpg"
       },{
         "id": 19,
@@ -272,7 +272,7 @@
         "size42": false,
         "name": "Sandale",
         "category": "sandale",
-        "price": 10480,
+        "price": 9800,
         "img1Url": "./src/images/proizvodi/shoe-19.jpg"
       },{
         "id": 20,
@@ -286,7 +286,7 @@
         "size42": false,
         "name": "Sandale",
         "category": "sandale",
-        "price": 10480,
+        "price": 9800,
         "img1Url": "./src/images/proizvodi/shoe-20.jpg"
       },{
         "id": 21,
@@ -314,7 +314,7 @@
         "size42": false,
         "name": "Sandale",
         "category": "sandale",
-        "price": 10480,
+        "price": 9480,
         "img1Url": "./src/images/proizvodi/shoe-22.jpg"
       },{
         "id": 23,
@@ -328,7 +328,7 @@
         "size42": false,
         "name": "Baletanke",
         "category": "baletanke",
-        "price": 10480,
+        "price": 9700,
         "img1Url": "./src/images/proizvodi/shoe-23.jpg"
       },{
         "id": 24,
@@ -342,7 +342,7 @@
         "size42": false,
         "name": "Salonke",
         "category": "salonke",
-        "price": 10480,
+        "price": 11000,
         "img1Url": "./src/images/proizvodi/shoe-24.jpg"
       }
     ],

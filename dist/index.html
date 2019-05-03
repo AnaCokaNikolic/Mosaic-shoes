@@ -45,8 +45,7 @@
             
                 <div class="col-3">
                     <ul class="nav-shop">
-                        <!-- <li><a href="#" id="user"><i class="fas fa-user fa-2x"></i></a></li> -->
-                        <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                        <li><a href="#" id="cart-link"><i class="fas fa-shopping-cart fa-2x"></i><span id="itemCount" class="text-kontakt">0</span></a></li>
                     </ul>
                 </div>
                 
@@ -64,26 +63,29 @@
             </div>
         </div>
     </div>
+
+    <!-- === CART: begin === --> 
     <div id="cart">
         <form  id="forma" name="forma" method="GET" action="" onsubmit=""> 
             <h4>Vaša korpa</h4>
 
-            <table id="tabela">
+            <table>
                 <tbody id="cartItems">
                 </tbody>
                 <tfoot>
                     <tr>
                         <td colspan="2">Ukupno:</td>
-                        <td id="total"></td>
+                        <td id="total">0</td>
                         <td>RSD</td>
                     </tr>
                 </tfoot>
             </table>
             <div class="submitButton">
-                <button id="shopButton" type="submit" class="checkOut">Završi kupovinu</button>
+                <button id="shopButton" type="submit" class="checkOut" disabled>Završi kupovinu</button>
             </div>
         </form>
     </div>
+    <!-- === CART: end === --> 
    
     <!-- === MAIN: begin === --> 
     <div class="main">
@@ -164,6 +166,16 @@
                         <h3 class="text-center">Obojite svoje korake</h3>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12 categories">
+                        <a class="all active">SVI PROIZVODI</a> |
+                        <a class="salonke">SALONKE</a> |
+                        <a class="sandale">SANDALE</a> |
+                        <a class="baletanke">BALETANKE</a> |
+                        <a class="papuce">PAPUČE</a> |
+                        <a class="cipele">DUBOKE CIPELE</a>
+                    </div>
+                </div>
                 <div id="itemContainer" class="row">
                 </div>
             </div>
@@ -172,7 +184,7 @@
 
         <!-- === PROIZVOD MODAL: begin === -->
         <div id="itemModal" class="modal">
-            <form id="itemForm" class="modal-content animate" action="">
+            <form id="itemForm" class="modal-content animate" action="#proizvodi">
                 <p class="close" title="Zatvori"> X </p>
                 <div class="row ">
                     <div class="col-7 slideConatainer">
@@ -197,27 +209,27 @@
                         <h3 id="itemDescription"></h3>
                         
                         <label class="sizeContainer 37">
-                            <input type="radio" name="radio" value="37"> 
+                            <input type="radio" name="size" value="37"> 
                             <span class="checkmark"><p>37</p></span>
                         </label>
                         <label class="sizeContainer 38"> 
-                            <input type="radio" name="radio" value="38"> 
+                            <input type="radio" name="size" value="38"> 
                             <span class="checkmark"><p>38</p></span>
                         </label>
                         <label class="sizeContainer 39"> 
-                            <input type="radio" name="radio" value="39"> 
+                            <input type="radio" name="size" value="39"> 
                             <span class="checkmark"><p>39</p></span>
                         </label>
                         <label class="sizeContainer 40"> 
-                            <input type="radio" name="radio" value="40"> 
+                            <input type="radio" name="size" value="40"> 
                             <span class="checkmark"><p>40</p></span>
                         </label>
                         <label class="sizeContainer 41"> 
-                            <input type="radio" name="radio" value="41"> 
+                            <input type="radio" name="size" value="41"> 
                             <span class="checkmark"><p>41</p></span>
                         </label>
                         <label class="sizeContainer 42"> 
-                            <input type="radio" name="radio" value="42"> 
+                            <input type="radio" name="size" value="42"> 
                             <span class="checkmark"><p>42</p></span>
                         </label>
                         <div class="shopItemMessage"><h3 id="shopItemMessage"> </h3></div>
@@ -231,6 +243,85 @@
         </div>
        
         <!-- === PROIZVODI MODAL: end === -->
+
+        <!-- === POTVRDA MODAL: begin === -->
+        <div id="confirmationModal" class="modal">
+            <form id="confirmationForm" class="modal-content animate" action="">
+                <p class="close" title="Zatvori"> X </p>
+                <div class="row ">
+                    <div class="col-6">
+                        <h4>Proizvodi u korpi:</h4>
+                        <table>
+                            <tbody id="confirmationCartItems">
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Ukupno:</td>
+                                    <td id="confirmationTotal">0</td>
+                                    <td>RSD</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="col-6">
+                        <h4>Adresa za dostavu:</h4>
+                        <div class="inputWithIcon">
+                            <input type="text" name="name" placeholder="Ime i prezime" required="" id="deliveryName">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="inputWithIcon">
+                            <input type="text" name="adress" placeholder="Adresa" required="" id="deliveryAddress">
+                            <i class="fas fa-address-card" aria-hidden="true"></i>
+                        </div>
+                        <div class="inputWithIcon">
+                            <input type="text" name="zipCode" placeholder="Poštanski broj" required="" id="deliveryZip">
+                            <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+                        </div>
+                        <div class="inputWithIcon">
+                            <input type="text" name="city" placeholder="Mesto" required="" id="deliveryCity">
+                            <i class="fas fa-university" aria-hidden="true"></i>
+                        </div>
+                        <div class="inputWithIcon">
+                            <input type="text" name="country" placeholder="Država" required="" id="deliveryCountry">
+                            <i class="fas fa-flag" aria-hidden="true"></i>
+                        </div>
+                        <div class="inputWithIcon">
+                            <input type="tel" name="phone" placeholder="Telefon" required="" id="deliveryTel">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <h4>Način plaćanja:</h4>
+                        <input id="cash" type="radio" name="payment" value="cash" class="radio" checked>Pouzećem
+                        <input id="card" type="radio" name="payment" value="card" class="radio" >Karticom<br>
+                        
+                        <div class="inputWithIcon">
+                            <input type="text" name="nameOnCard" placeholder="Ime na kartici" required="" id="nameOnCard" disabled>
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="inputWithIcon">
+                            <input type="text" name="cardNumber" placeholder="Broj kartice" required="" id="cardNumber" disabled>
+                            <i class="fas fa-credit-card" aria-hidden="true"></i>
+                        </div>
+                        <div class="cardExp">
+                            <div class="inputWithIcon">
+                                <input type="text" name="cardExp" placeholder="Važi do:" required="" id="cardExp" disabled>
+                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="cvvCard">
+                            <div class="inputWithIcon">
+                                <input type="text" name="cvvCard" placeholder="CVV" required="" id="cvvCard" disabled>
+                                <i class="fas fa-lock" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    
+                        <h3 id="confirmationMessage"></h3>
+                        <button id="confirmationButton" type="submit" >Potvrdi kupovinu</button>
+                        
+                    </div>
+                </div>
+            </form> 
+        </div>
+        <!-- === POTVRDA MODAL: end === -->
         
         <!-- === O NAMA SECTION: begin === -->
         <section id="o-nama">
@@ -382,7 +473,7 @@
                         </ul>
                    </div>
                    <div>
-                        <ul class="adresa">
+                        <ul class="adresa" id="workingHours" title="">
                           <li class="vreme"> RADNO VREME</li>
                           <li class="vreme"> Ponedeljak - Petak</li>
                           <li class="vreme"> 09:00 - 17:00</li>
@@ -390,7 +481,7 @@
                    </div>
                 </div>
                 <div class="col-6" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="400">
-                    <form id="contactForm" name="contactForm" action="#kontakt"  onsubmit="">
+                    <form id="contactForm" name="contactForm" action="#kontakt" method="POST">
                         <div class="inputWithIcon">
                             <input type="text" name="ime" placeholder="Ime i prezime" required="" id="formIme">
                             <i class="fas fa-user" aria-hidden="true"></i>
@@ -407,7 +498,7 @@
                             <textarea rows="6" name="poruka" placeholder="Poruka" required="" id="formPoruka"></textarea>
                             <i class="fas fa-pencil-alt" aria-hidden="true"></i>
                         </div>
-                        <div id="validationMessage">
+                        <div class="validationMessage">
                         </div>
                         <button id="sendButton" type="submit">Pošalji</button>
                     </form>

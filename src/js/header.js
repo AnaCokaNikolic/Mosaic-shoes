@@ -2,38 +2,24 @@
 import $ from 'jquery';
 import ScrollMagic from 'scrollmagic';
 
-$(`#usluge-link`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#usluge`).offset().top}, 1000);
-});
-$(`#proizvodi-link`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#proizvodi`).offset().top}, 1000);
-});
-$(`#o-nama-link`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#o-nama`).offset().top}, 1000);
-});
-$(`#tim-link`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#tim`).offset().top}, 1000);
-});
-$(`#kontakt-link`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#kontakt`).offset().top}, 1000);
-});
-$(`.logo .link`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#first-section`).offset().top}, 1000);
-});
-$(`#enter`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#proizvodi`).offset().top}, 1000);
-});
-$(`#goToTop`).on(`click`, (event) => {
-    event.preventDefault();
-    $(`html, body`).animate({scrollTop: $(`#first-section`).offset().top}, 1000);
-});
+const links = {
+    uslugeLink: `usluge`,
+    proizvodiLink: `proizvodi`,
+    oNamaLink: `o-nama`,
+    timLink: `tim`,
+    kontaktLink: `kontakt`,
+    logoLink: `first-section`,
+    enter: `proizvodi`,
+    goToTop: `first-section`,
+};
+const entries = Object.entries(links);
+for (const [link, section] of entries) {
+    $(`#${link}`).on(`click`, (event) => {
+      event.preventDefault();
+      $(`html, body`).animate({scrollTop: $(`#${section}`).offset().top}, 1000);
+    });
+  }
+
 $(`#cart-link`).on(`click`, (event) => {
     event.preventDefault();
     $(`.nav-shop li a`).toggleClass(`active`);
@@ -61,17 +47,17 @@ new ScrollMagic.Scene({triggerElement: `#enter`})
                 .setClassToggle(`#cart`, `shrink`)
                 .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#usluge`, duration: `100%` })
-                .setClassToggle(`#usluge-link`, `active`)
+                .setClassToggle(`#uslugeLink`, `active`)
                 .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#proizvodi`, duration: `100%`})
-                .setClassToggle(`#proizvodi-link`, `active`)
+                .setClassToggle(`#proizvodiLink`, `active`)
                 .addTo(controller);
-new ScrollMagic.Scene({triggerElement: `#o-nama`, duration: `150%`})
-                .setClassToggle(`#o-nama-link`, `active`)
+new ScrollMagic.Scene({triggerElement: `#o-nama`, duration: `100%`})
+                .setClassToggle(`#oNamaLink`, `active`)
                 .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#tim`, duration: `100%`})
-                .setClassToggle(`#tim-link`, `active`)
+                .setClassToggle(`#timLink`, `active`)
                 .addTo(controller);
 new ScrollMagic.Scene({triggerElement: `#kontakt`, duration: `100%`})
-                .setClassToggle(`#kontakt-link`, `active`)
+                .setClassToggle(`#kontaktLink`, `active`)
                 .addTo(controller);

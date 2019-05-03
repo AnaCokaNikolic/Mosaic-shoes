@@ -1,3 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/prefer-default-export */
+
 import $ from 'jquery';
 import axios from 'axios';
 
@@ -38,6 +41,5 @@ async function getItems(category) {
             displayItems(item);
         }
     }
-
 
 export { getItems };

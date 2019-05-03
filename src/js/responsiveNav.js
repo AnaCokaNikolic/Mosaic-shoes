@@ -1,3 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-restricted-globals */
+
 import $ from 'jquery';
 
 $(`#burger`).click(() => {

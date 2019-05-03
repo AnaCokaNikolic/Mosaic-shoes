@@ -1,9 +1,8 @@
-/* eslint-disable no-tabs */
 /* eslint-disable import/no-extraneous-dependencies */
 
 import $ from 'jquery';
-// import axios from 'axios';
 import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 import './css/style.css';
 import './css/media.css';

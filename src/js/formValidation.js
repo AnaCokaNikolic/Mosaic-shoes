@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 import $ from 'jquery';
 
 const regExIme = /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,22}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,22})?$/;
@@ -133,10 +135,7 @@ function confirmationFormValidation(e) {
             $(`#confirmationMessage`).html(``);
             $(`#confirmationMessage`).html(`<i class="fas fa-check-circle"></i> Vaša narudžbina je uspešna. Hvala!`).show().fadeOut(7000);
             $(`#confirmationForm`)[0].reset();
-            $(`#nameOnCard`).prop(`disabled`, true);
-            $(`#cardNumber`).prop(`disabled`, true);
-            $(`#cardExp`).prop(`disabled`, true);
-            $(`#cvvCard`).prop(`disabled`, true);
+            $(`.cardInfo`).prop(`disabled`, true);
             $(`#confirmationCartItems`).children().remove();
             $(`#confirmationTotal`)[0].innerHTML = `0`;
             $(`#cartItems`).children().remove();
@@ -149,10 +148,7 @@ function confirmationFormValidation(e) {
         $(`#confirmationMessage`).html(``);
         $(`#confirmationMessage`).html(`<i class="fas fa-check-circle"></i> Vaša narudžbina je uspešna. Hvala!`).show().fadeOut(7000);
         $(`#confirmationForm`)[0].reset();
-        $(`#nameOnCard`).prop(`disabled`, true);
-        $(`#cardNumber`).prop(`disabled`, true);
-        $(`#cardExp`).prop(`disabled`, true);
-        $(`#cvvCard`).prop(`disabled`, true);
+        $(`.cardInfo`).prop(`disabled`, true);
         $(`#confirmationCartItems`).children().remove();
         $(`#confirmationTotal`)[0].innerHTML = `0`;
         $(`#cartItems`).children().remove();
