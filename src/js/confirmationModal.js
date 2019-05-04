@@ -7,6 +7,13 @@ $(`#shopButton`).click((e) => {
         const cartItems = $(`#cartItems`)[0].children;
         $(`#confirmationCartItems`).append($(cartItems).clone());
         $(`<span>RSD</span>`).replaceAll(`#confirmationCartItems .remove`);
+        $(`#confirmationCartItems`).append(` <tr>
+            <td class="cartItemImage"><img src="./src/images/dostava.png" alt="dostava"></td>
+            <td>Dostava</td>
+            <td>400</td>
+            <td>RSD</td>
+            </tr>`);
+
         $(`#confirmationModal`).prop(`style`, `display: block;`);
         $(`body`).prop(`style`, `overflow: hidden;`);
 });

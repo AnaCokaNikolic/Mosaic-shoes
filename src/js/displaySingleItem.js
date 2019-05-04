@@ -36,7 +36,7 @@ async function displaySingleItem(item, description, images) {
       $(this).css(`background-color`, `#818181`);
       $(this).css(`cursor`, `pointer`);
       }, () => {
-      $(this).css(`background-color`, `#bbbbbb`);
+      $(this).css(`background-color`, `#eee`);
     });
   }
   item.size37 === true ? sizeTrue(37) : sizeFalse(37);

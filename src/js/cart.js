@@ -3,7 +3,10 @@
 
 import axios from 'axios';
 import $ from 'jquery';
+import Swal from 'sweetalert2';
 import { CountUp } from 'countup.js';
+import { closeItemModal } from '../js/itemModal'
+
 
 const api = axios.create({
     baseURL: `http://localhost:3000`,
@@ -34,7 +37,7 @@ function subtractTotal(price) {
     total -= price;
     const countUpTotal1 = new CountUp(`total`, total, options);
     countUpTotal1.start();
-    $(`#confirmationTotal`)[0].innerHTML = total.toLocaleString(`sr-RS`);
+    $(`#confirmationTotal`)[0].innerHTML = total + 400;
 }
 
 function addTotal(price) {
@@ -47,7 +50,7 @@ function addTotal(price) {
     total += price;
     const countUpTotal2 = new CountUp(`total`, total, options);
     countUpTotal2.start();
-    $(`#confirmationTotal`)[0].innerHTML = total.toLocaleString(`sr-RS`);
+    $(`#confirmationTotal`)[0].innerHTML = total + 400;
 }
 
 function removeItem() {
@@ -91,15 +94,6 @@ async function displayItemInCart(id, size) {
     renderItems(img1Url, name, size, price);
 }
 
-function displayMessage() {
-    $.when($(`#shopItemMessage`).html(`<i class="fas fa-check-circle"></i> Proizvod je dodat u korpu. Hvala!`).show().fadeOut(2000))
-      .then(() => {
-        $(`#itemModal`).fadeOut(500);
-        $(`body`).prop(`style`, `overflow-y :auto; overflow-x: hidden;`);
-        $(`#itemForm`)[0].reset();
-      });
-}
-
 function saveInfoToLocalStorage(e) {
     const id = e.target.attributes[2].value;
     const selectedSize = $(`.sizeContainer input:checked`).val();
@@ -117,7 +111,14 @@ function getItemInfo() {
 function addToCart(e) {
     e.preventDefault();
     if ($(`.sizeContainer input`).is(`:checked`)) {
-        displayMessage();
+
+        Swal.fire({
+            type: `success`,
+            title: `Proizvod je dodat u korpu`,
+          }).then(() => {
+            // $(`#itemForm`)[0].submit();
+            closeItemModal();
+          });
         saveInfoToLocalStorage(e);
         getItemInfo();
     } else {

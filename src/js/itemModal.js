@@ -1,5 +1,12 @@
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable import/no-extraneous-dependencies */
 import $ from 'jquery';
+
+function closeItemModal() {
+    $(`#itemModal`).fadeOut(500);
+    $(`body`).prop(`style`, `overflow-y :auto; overflow-x: hidden;`);
+    $(`#itemForm`)[0].reset();
+}
 
 $(`#itemContainer`).click((e) => {
     if (e.target.classList.contains(`itemCart`) || e.target.classList.contains(`fa-shopping-cart`)) {
@@ -9,20 +16,16 @@ $(`#itemContainer`).click((e) => {
     }
 });
 
-$(`.close`).click(() => {
-    $(`#itemModal`).prop(`style`, `display: none;`);
-    $(`body`).prop(`style`, `overflow-y :auto;`);
-    $(`#itemForm`)[0].reset();
-});
+$(`.close`).click(closeItemModal);
 
 $(window).click((e) => {
     if (e.target === $(`#itemModal`)[0]) {
-        $(`#itemModal`).prop(`style`, `display: none;`);
-        $(`body`).prop(`style`, `overflow-y :auto;`);
-        $(`#itemForm`)[0].reset();
+        closeItemModal();
     }
 });
 
 $(`.demo`).click((e) => {
    $(`#expandedImg`)[0].src = e.target.src;
 });
+
+export { closeItemModal };

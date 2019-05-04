@@ -184,7 +184,7 @@
 
         <!-- === PROIZVOD MODAL: begin === -->
         <div id="itemModal" class="modal">
-            <form id="itemForm" class="modal-content animate" action="#proizvodi">
+            <form id="itemForm" class="modal-content animate" action="" >
                 <p class="close" title="Zatvori"> X </p>
                 <div class="row ">
                     <div class="col-7 slideConatainer">
@@ -244,7 +244,7 @@
 
         <!-- === POTVRDA MODAL: begin === -->
         <div id="confirmationModal" class="modal">
-            <form id="confirmationForm" class="modal-content animate" action="">
+            <form id="confirmationForm" class="modal-content animate" action="#proizvodi" method="GET">
                 <p class="close" title="Zatvori"> X </p>
                 <div class="row ">
                     <div class="col-6">
@@ -259,7 +259,7 @@
                                     <td>RSD</td>
                                 </tr>
                             </tfoot>
-                        </table>
+                        </table><br>
                     </div>
                     <div class="col-6">
                         <h4>Adresa za dostavu:</h4>
@@ -477,21 +477,21 @@
                    </div>
                 </div>
                 <div class="col-6" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="400">
-                    <form id="contactForm" name="contactForm" action="#kontakt" method="POST">
+                    <form id="contactForm" name="contactForm" action="#kontakt" method="GET">
                         <div class="inputWithIcon">
-                            <input type="text" name="ime" placeholder="Ime i prezime" required="" id="formIme">
+                            <input type="text" name="ime" placeholder="Ime i prezime" id="formIme">
                             <i class="fas fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="email" name="email" placeholder="Email" required="" id="formEmail">
+                            <input type="email" name="email" placeholder="Email" id="formEmail">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="tel" name="telefon" placeholder="Telefon" required="" id="formTel">
+                            <input type="tel" name="telefon" placeholder="Telefon" id="formTel">
                             <i class="fas fa-phone" aria-hidden="true"></i>
                         </div>
                         <div class="inputWithIcon">
-                            <textarea rows="6" name="poruka" placeholder="Poruka" required="" id="formPoruka"></textarea>
+                            <textarea rows="6" name="poruka" placeholder="Poruka" id="formPoruka"></textarea>
                             <i class="fas fa-pencil-alt" aria-hidden="true"></i>
                         </div>
                         <div class="validationMessage">

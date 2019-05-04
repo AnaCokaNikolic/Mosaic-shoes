@@ -28,7 +28,7 @@ $(document).ready(() => {
     });
 
     $(`#addToCartButton`).click(addToCart);
-    $(`#contactForm`).submit(formValidation); //
+    $(`#sendButton`).click(formValidation);
     $(`#confirmationButton`).click(confirmationFormValidation);
     const d = new Date();
     const dayOfWeek = d.getDay();

@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import $ from 'jquery';
+// import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 const regExIme = /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,22}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,22})?$/;
 const regExEmail = /\S+@\S+\.\S+/;
@@ -11,6 +13,16 @@ const regExCity = /[\w',-\\/.\s]/;
 const regExCardNumber = /\d{4}-?\d{4}-?\d{4}-?\d{4}/;
 const regExCardExp = /^((0[1-9])|(1[0-2]))\/(\d{2})$/;
 const regExCardCvv = /^([0-9]{3,4})$/;
+
+function resetValues() {
+    $(`#confirmationCartItems`).children().remove();
+    $(`#confirmationTotal`)[0].innerHTML = `0`;
+    $(`#cartItems`).children().remove();
+    $(`#total`)[0].innerHTML = `0`;
+    $(`#itemCount`)[0].innerHTML = `0`;
+    $(`#shopButton`).prop(`disabled`, true);
+    $(`#itemCount`).hide();
+}
 
 function formValidation(e) {
     e.preventDefault();
@@ -43,9 +55,13 @@ function formValidation(e) {
         $(`.validationMessage`).html(`<i class="fas fa-exclamation-circle"></i> Unesite poruku`).show().fadeOut(4000);
         $(`#formPoruka`).focus();
     } else {
-        $(`.validationMessage`).html(``);
-        $(`.validationMessage`).html(`<i class="fas fa-check-circle"></i> Poruka je poslata. Hvala!`).show().fadeOut(7000);
-        $(`#contactForm`)[0].reset();
+        Swal.fire(
+            `Hvala!`,
+            `Vaša poruka je poslata!`,
+            `success`,
+          ).then(() => {
+            $(`#contactForm`)[0].submit();
+          });
     }
 }
 
@@ -133,30 +149,24 @@ function confirmationFormValidation(e) {
             $(`#confirmationMessage`).html(`<i class="fas fa-exclamation-circle"></i> Unesite validan CVV (xxx ili xxxx)`).show().fadeOut(4000);
             $(`#cvvCard`).focus();
         } else {
-            $(`#confirmationMessage`).html(``);
-            $(`#confirmationMessage`).html(`<i class="fas fa-check-circle"></i> Vaša narudžbina je uspešna. Hvala!`).show().fadeOut(7000);
-            $(`#confirmationForm`)[0].reset();
-            $(`.cardInfo`).prop(`disabled`, true);
-            $(`#confirmationCartItems`).children().remove();
-            $(`#confirmationTotal`)[0].innerHTML = `0`;
-            $(`#cartItems`).children().remove();
-            $(`#total`)[0].innerHTML = `0`;
-            $(`#itemCount`)[0].innerHTML = `0`;
-            $(`#shopButton`).prop(`disabled`, true);
-            $(`#itemCount`).hide();
+            Swal.fire(
+                `Hvala!`,
+                `Vaša kupovina je uspešna!`,
+                `success`,
+              ).then(() => {
+                $(`#confirmationForm`)[0].submit();
+                resetValues();
+              });
         }
     } else {
-        $(`#confirmationMessage`).html(``);
-        $(`#confirmationMessage`).html(`<i class="fas fa-check-circle"></i> Vaša narudžbina je uspešna. Hvala!`).show().fadeOut(7000);
-        $(`#confirmationForm`)[0].reset();
-        $(`.cardInfo`).prop(`disabled`, true);
-        $(`#confirmationCartItems`).children().remove();
-        $(`#confirmationTotal`)[0].innerHTML = `0`;
-        $(`#cartItems`).children().remove();
-        $(`#total`)[0].innerHTML = `0`;
-        $(`#itemCount`)[0].innerHTML = `0`;
-        $(`#shopButton`).prop(`disabled`, true);
-        $(`#itemCount`).hide();
+        Swal.fire(
+            `Hvala!`,
+            `Vaša kupovina je uspešna!`,
+            `success`,
+          ).then(() => {
+            $(`#confirmationForm`)[0].submit();
+            resetValues();
+          });
     }
 }
 
