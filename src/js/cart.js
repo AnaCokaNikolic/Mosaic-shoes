@@ -5,7 +5,7 @@ import axios from 'axios';
 import $ from 'jquery';
 import Swal from 'sweetalert2';
 import { CountUp } from 'countup.js';
-import { closeItemModal } from '../js/itemModal'
+import { closeItemModal } from '../js/itemModal.js';
 
 
 const api = axios.create({
@@ -53,8 +53,20 @@ function addTotal(price) {
     $(`#confirmationTotal`)[0].innerHTML = total + 400;
 }
 
-function removeItem() {
-    const row = this.parentNode.parentNode;
+function getItemInfo() {
+    let itemInfo;
+    if (itemCount === 0) {
+        sessionStorage.clear();
+    }
+    if (sessionStorage.getItem(`itemInfo`) === null) {
+        itemInfo = [];
+    } else {
+        itemInfo = JSON.parse(sessionStorage.getItem(`itemInfo`));
+    }
+    return itemInfo;
+}
+function removeItemFromCart(event) {
+    const row = event.currentTarget.parentNode.parentNode;
     row.style.transition = `all 1s ease`;
     row.style.height = 0;
     row.style.opacity = 0;
@@ -62,13 +74,24 @@ function removeItem() {
         row.remove();
     }, 1000);
 
-    const price = this.parentNode.previousElementSibling.innerHTML;
+    const price = event.currentTarget.parentNode.previousElementSibling.innerHTML;
     subtractTotal(price);
     itemCount = Number($(`#itemCount`)[0].innerHTML) - 1;
     displayItemCount(itemCount);
 }
 
-function renderItems(img1Url, name, size, price) {
+function removeItemFromStorage(id, size) {
+    const items = getItemInfo();
+    items.forEach((item, index) => {
+        if (item.itemId === id && item.size === size) {
+            items.splice(index, 1);
+        }
+        sessionStorage.clear();
+        sessionStorage.setItem(`itemInfo`, JSON.stringify(items));
+    });
+}
+
+function renderItems(id, img1Url, name, size, price) {
     $(`#cartItems`).append(`<tr>
         <td class="cartItemImage">
             <img src="${img1Url}" alt="${name}">
@@ -78,7 +101,10 @@ function renderItems(img1Url, name, size, price) {
         <td class="${removeId}"></td>
         </tr>`);
     const remove = $(`<a class="remove"></a>`).html(`<i class="far fa-trash-alt" ></i>`).appendTo($(`.${removeId}`));
-    $(remove.get(0)).one(`click`, removeItem);
+    $(remove.get(0)).one(`click`, (event) => {
+        removeItemFromCart(event);
+        removeItemFromStorage(id, size);
+    });
     removeId++;
     addTotal(price);
     itemCount = Number($(`#itemCount`)[0].innerHTML) + 1;
@@ -91,36 +117,54 @@ async function displayItemInCart(id, size) {
     const {name} = item[0];
     const {price} = item[0];
     const {img1Url} = item[0];
-    renderItems(img1Url, name, size, price);
+    renderItems(id, img1Url, name, size, price);
 }
 
-function saveInfoToLocalStorage(e) {
-    const id = e.target.attributes[2].value;
-    const selectedSize = $(`.sizeContainer input:checked`).val();
-    const itemInfo = {itemId: id, size: selectedSize};
-    localStorage.setItem(`itemInfo`, JSON.stringify(itemInfo));
+
+function saveInfoToSessionStorage(id, selectedSize) {
+    const itemInfo = getItemInfo();
+    const item = {itemId: id, size: selectedSize};
+    itemInfo.push(item);
+    sessionStorage.setItem(`itemInfo`, JSON.stringify(itemInfo));
+    displayItemInCart(id, selectedSize);
 }
 
-function getItemInfo() {
-    const itemInfo = JSON.parse(localStorage.getItem(`itemInfo`));
-    const {itemId} = itemInfo;
-    const {size} = itemInfo;
-    displayItemInCart(itemId, size);
+function checkItems(id, selectedSize) {
+    const items = getItemInfo();
+    let status = true;
+    if (items[0] === undefined) {
+        status = true;
+    }
+    if (items[0] !== undefined) {
+        items.forEach((item) => {
+            if (item.itemId === id && item.size === selectedSize) {
+                status = false;
+            }
+       });
+    }
+    return status;
 }
-
 function addToCart(e) {
     e.preventDefault();
     if ($(`.sizeContainer input`).is(`:checked`)) {
-
-        Swal.fire({
-            type: `success`,
-            title: `Proizvod je dodat u korpu`,
-          }).then(() => {
-            // $(`#itemForm`)[0].submit();
-            closeItemModal();
-          });
-        saveInfoToLocalStorage(e);
-        getItemInfo();
+        const id = e.target.attributes[2].value;
+        const selectedSize = $(`.sizeContainer input:checked`).val();
+        if (checkItems(id, selectedSize)) {
+            Swal.fire({
+                type: `success`,
+                title: `Proizvod je dodat u korpu`,
+              }).then(() => {
+                closeItemModal();
+              });
+            saveInfoToSessionStorage(id, selectedSize);
+        } else {
+            Swal.fire({
+                type: `error`,
+                title: `Ovaj proizvod u veličini ${selectedSize} se već nalazi u korpi`,
+              }).then(() => {
+                closeItemModal();
+              });
+        }
     } else {
         $(`#shopItemMessage`).html(`<i class="fas fa-exclamation-circle"></i> Izaberite veličinu`).show().fadeOut(3000);
     }
