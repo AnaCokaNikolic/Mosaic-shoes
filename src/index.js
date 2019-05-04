@@ -7,6 +7,8 @@ import 'aos/dist/aos.css';
 import './css/style.css';
 import './css/media.css';
 
+import './images/favicon.png';
+
 import './js/header';
 import './js/responsiveNav';
 import './js/itemModal';

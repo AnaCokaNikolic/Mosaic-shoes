@@ -13,7 +13,7 @@
     "url": "git+https://github.com/AnaCokaNikolic/final.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ana Milosavljevic",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnaCokaNikolic/final/issues"
@@ -51,7 +51,6 @@
     "countup.js": "^2.0.4",
     "eslint-config-airbnb": "^17.1.0",
     "imports-loader": "^0.8.0",
-    "sweetalert": "^2.1.2",
     "sweetalert2": "^8.10.0"
   }
 }
