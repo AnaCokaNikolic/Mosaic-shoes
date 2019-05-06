@@ -14,6 +14,7 @@ import './js/responsiveNav';
 import './js/itemModal';
 import './js/confirmationModal';
 import './js/counter';
+import './js/workingHours';
 
 import { getItems } from './js/displayItems';
 import { addToCart } from './js/cart';
@@ -32,8 +33,4 @@ $(document).ready(() => {
     $(`#addToCartButton`).click(addToCart);
     $(`#sendButton`).click(formValidation);
     $(`#confirmationButton`).click(confirmationFormValidation);
-    const d = new Date();
-    const dayOfWeek = d.getDay();
-    const hour = d.getHours();
-     $(`#workingHours`).attr(`title`, dayOfWeek !== 6 && dayOfWeek !== 0 && hour >= 9 && hour < 17 ? `Sada otvoreno!` : `Sada zatvoreno!`);
 });

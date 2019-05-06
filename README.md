@@ -5,7 +5,7 @@ kupiti proizvode ili poslati poruku preko kontakt forme. Sadršaj je responzivan
 
 ## Tehnologije korišćene pri razvoju
 Za strukturu i izgled sajta korišćeni su <b>Html</b> i <b>Css</b>, a za dinamičnost i interakciju sa korisnikom <b>JavaScript/EcmaScript</b>.
-Za lakšu manipulaciju korišćen je <b>Jquery</b>, a za animiranje sadržaja korišćene su biblioteke <b>Scroll Magic</b>, <b>AOS</b>, <b>Count Up</b> i <b>Sweet Alert</b>.
+Za lakšu manipulaciju korišćen je <b>Jquery</b>, za asinhrone pozive <b>Axios</b>, a za animiranje sadržaja korišćene su biblioteke <b>Scroll Magic</b>, <b>AOS</b>, <b>Count Up</b> i <b>Sweet Alert</b>.
 
 Javascript kod je organizovan po modulima i korišćen je <b>Node Package Manager (npm)</b> i <b>Webpack</b> kao "module bundler" uz dodatne funkcionalnosti <b>webpack loader-a</b> i <b>webpack plugin-a</b>.
 U projekat je implementiran <b>Bubel</b> transpajler, a da bi kod bio standardizovanog izgleda implementiran je <b>Eslint</b>.
@@ -16,11 +16,14 @@ U projekat je implementiran <b>Bubel</b> transpajler, a da bi kod bio standardiz
 ![Structure](./src/images/structure.png)
 
 ## Pokretanje projekta
+```npm
 npm i
 
-npm run start
-
 npm run server
+```
+```npm
+npm run start
+```
 
 Otvoriti http://localhost:8080/ za prikaz u pretraživaču.
 

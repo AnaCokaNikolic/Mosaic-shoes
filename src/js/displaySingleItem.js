@@ -21,22 +21,22 @@ async function displaySingleItem(item, description, images) {
 
   function sizeFalse(size) {
     $(`.${size} input`).prop(`disabled`, true);
-    $(`.${size} p`).css(`color`, `#cdcdcd`);
-    $(`.${size} span`).css(`background-color`, `#eee`);
-    $(`.${size} span`).hover(() => {
-      $(this).css(`cursor`, `not-allowed`);
+    $(`.${size} .number`).css(`color`, `#cdcdcd`);
+    $(`.${size} .checkmark`).hover(() => {
+      $(`.${size} .checkmark`).css(`background-color`, `#eee`);
+      $(`.${size} .checkmark`).css(`cursor`, `not-allowed`);
       }, () => {
-      $(this).css(`background-color`, `#eee`);
+        $(`.${size} .checkmark`).css(`background-color`, `#eee`);
     });
   }
   function sizeTrue(size) {
     $(`.${size} input`).prop(`disabled`, false);
-    $(`.${size} p`).css(`color`, `#000`);
-    $(`.${size} span`).hover(() => {
-      $(this).css(`background-color`, `#818181`);
-      $(this).css(`cursor`, `pointer`);
+    $(`.${size} .number`).css(`color`, `#000`);
+    $(`.${size} .checkmark`).hover(() => {
+      $(`.${size} .checkmark`).css(`background-color`, `#818181`);
+      $(`.${size} .checkmark`).css(`cursor`, `pointer`);
       }, () => {
-      $(this).css(`background-color`, `#eee`);
+        $(`.${size} .checkmark`).css(`background-color`, `#eee`);
     });
   }
   item.size37 === true ? sizeTrue(37) : sizeFalse(37);

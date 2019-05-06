@@ -5,7 +5,7 @@ import axios from 'axios';
 import $ from 'jquery';
 import Swal from 'sweetalert2';
 import { CountUp } from 'countup.js';
-import { closeItemModal } from '../js/itemModal.js';
+import { closeItemModal } from "./itemModal";
 
 
 const api = axios.create({
@@ -26,31 +26,27 @@ function displayItemCount(count) {
         $(`#itemCount`).show();
     }
 }
-
-function subtractTotal(price) {
-    total = Number($(`#total`)[0].innerHTML);
+function animateTotal(newTotal) {
     const options = {
         startVal: total,
         duration: 1,
         separator: ``,
     };
-    total -= price;
-    const countUpTotal1 = new CountUp(`total`, total, options);
+    const countUpTotal1 = new CountUp(`total`, newTotal, options);
     countUpTotal1.start();
-    $(`#confirmationTotal`)[0].innerHTML = total + 400;
+    $(`#confirmationTotal`)[0].innerHTML = newTotal + 400;
+}
+
+function subtractTotal(price) {
+    total = Number($(`#total`)[0].innerHTML);
+    const newTotal = total - price;
+    animateTotal(newTotal);
 }
 
 function addTotal(price) {
     total = Number($(`#total`)[0].innerHTML);
-    const options = {
-        startVal: total,
-        duration: 1,
-        separator: ``,
-    };
-    total += price;
-    const countUpTotal2 = new CountUp(`total`, total, options);
-    countUpTotal2.start();
-    $(`#confirmationTotal`)[0].innerHTML = total + 400;
+    const newTotal = total + price;
+    animateTotal(newTotal);
 }
 
 function getItemInfo() {
@@ -65,6 +61,7 @@ function getItemInfo() {
     }
     return itemInfo;
 }
+
 function removeItemFromCart(event) {
     const row = event.currentTarget.parentNode.parentNode;
     row.style.transition = `all 1s ease`;
@@ -119,7 +116,6 @@ async function displayItemInCart(id, size) {
     const {img1Url} = item[0];
     renderItems(id, img1Url, name, size, price);
 }
-
 
 function saveInfoToSessionStorage(id, selectedSize) {
     const itemInfo = getItemInfo();
