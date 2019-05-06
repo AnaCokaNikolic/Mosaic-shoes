@@ -8,7 +8,7 @@ Za strukturu i izgled sajta korišćeni su <b>Html</b> i <b>Css</b>, a za dinami
 Za lakšu manipulaciju korišćen je <b>Jquery</b>, za asinhrone pozive <b>Axios</b>, a za animiranje sadržaja korišćene su biblioteke <b>Scroll Magic</b>, <b>AOS</b>, <b>Count Up</b> i <b>Sweet Alert</b>.
 
 Javascript kod je organizovan po modulima i korišćen je <b>Node Package Manager (npm)</b> i <b>Webpack</b> kao "module bundler" uz dodatne funkcionalnosti <b>webpack loader-a</b> i <b>webpack plugin-a</b>.
-U projekat je implementiran <b>Bubel</b> transpajler, a da bi kod bio standardizovanog izgleda implementiran je <b>Eslint</b>.
+U projekat je implementiran <b>Babel</b> transpajler, a da bi kod bio standardizovanog izgleda implementiran je <b>Eslint</b>.
 
 <b>JSON server</b> je korišćen kao "mock server" sa bazom podataka.
 
