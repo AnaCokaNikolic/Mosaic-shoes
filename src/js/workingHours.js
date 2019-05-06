@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import $ from 'jquery';
 
 const d = new Date();

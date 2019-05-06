@@ -1,11 +1,131 @@
 {
 "items": [
+  {
+    "id": 1,
+    "descriptionId": 1,
+    "imagesId": 1,
+    "size37": true,
+    "size38": false,
+    "size39": true,
+    "size40": true,
+    "size41": true,
+    "size42": false,
+    "name": "Salonke",
+    "category": "salonke",
+    "price": 10480,
+    "img1Url": "./src/images/proizvodi/shoe-1.jpg"
+  },
+  {
+      "id": 2,
+      "descriptionId": 3,
+      "imagesId": 2,
+      "size37": false,
+      "size38": true,
+      "size39": true,
+      "size40": false,
+      "size41": true,
+      "size42": true,
+      "name": "Papuče",
+      "category": "papuce",
+      "price": 9600,
+      "img1Url": "./src/images/proizvodi/shoe-2.jpg"
+    },
     {
-      "id": 1,
+      "id": 3,
       "descriptionId": 1,
-      "imagesId": 1,
+      "imagesId": 3,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": true,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 9500,
+      "img1Url": "./src/images/proizvodi/shoe-3.jpg"
+    },
+    {
+      "id": 4,
+      "descriptionId": 4,
+      "imagesId": 4,
       "size37": true,
       "size38": false,
+      "size39": true,
+      "size40": true,
+      "size41": false,
+      "size42": true,
+      "name": "Baletanke",
+      "category": "baletanke",
+      "price": 7400,
+      "img1Url": "./src/images/proizvodi/shoe-4.jpg"
+    },
+    {
+      "id": 5,
+      "descriptionId": 4,
+      "imagesId": 5,
+      "size37": false,
+      "size38": true,
+      "size39": true,
+      "size40": false,
+      "size41": true,
+      "size42": true,
+      "name": "Baletanke",
+      "category": "baletanke",
+      "price": 7450,
+      "img1Url": "./src/images/proizvodi/shoe-5.jpg"
+    },
+    {
+      "id": 6,
+      "descriptionId": 1,
+      "imagesId": 6,
+      "size37": false,
+      "size38": true,
+      "size39": true,
+      "size40": false,
+      "size41": true,
+      "size42": true,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-6.jpg"
+    },
+    {
+      "id": 7,
+      "descriptionId": 4,
+      "imagesId": 7,
+      "size37": false,
+      "size38": true,
+      "size39": true,
+      "size40": false,
+      "size41": true,
+      "size42": true,
+      "name": "Baletanke",
+      "category": "baletanke",
+      "price": 7480,
+      "img1Url": "./src/images/proizvodi/shoe-7.jpg"
+    },
+    {
+      "id": 8,
+      "descriptionId": 1,
+      "imagesId": 8,
+      "size37": true,
+      "size38": true,
+      "size39": true,
+      "size40": true,
+      "size41": false,
+      "size42": true,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 11300,
+      "img1Url": "./src/images/proizvodi/shoe-8.jpg"
+    },
+    {
+      "id": 9,
+      "descriptionId": 1,
+      "imagesId": 9,
+      "size37": true,
+      "size38": true,
       "size39": true,
       "size40": true,
       "size41": true,
@@ -13,430 +133,438 @@
       "name": "Salonke",
       "category": "salonke",
       "price": 10480,
-      "img1Url": "./src/images/proizvodi/shoe-1.jpg"
-    },
-    {
-        "id": 2,
-        "descriptionId": 3,
-        "imagesId": 2,
-        "size37": false,
-        "size38": true,
-        "size39": true,
-        "size40": false,
-        "size41": true,
-        "size42": true,
-        "name": "Papuče",
-        "category": "papuce",
-        "price": 9600,
-        "img1Url": "./src/images/proizvodi/shoe-2.jpg"
-      },
-      {
-        "id": 3,
-        "descriptionId": 1,
-        "imagesId": 3,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": true,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 9500,
-        "img1Url": "./src/images/proizvodi/shoe-3.jpg"
-      },
-      {
-        "id": 4,
-        "descriptionId": 4,
-        "imagesId": 4,
-        "size37": true,
-        "size38": false,
-        "size39": true,
-        "size40": true,
-        "size41": false,
-        "size42": true,
-        "name": "Baletanke",
-        "category": "baletanke",
-        "price": 7400,
-        "img1Url": "./src/images/proizvodi/shoe-4.jpg"
-      },
-      {
-        "id": 5,
-        "descriptionId": 4,
-        "imagesId": 5,
-        "size37": false,
-        "size38": true,
-        "size39": true,
-        "size40": false,
-        "size41": true,
-        "size42": true,
-        "name": "Baletanke",
-        "category": "baletanke",
-        "price": 7450,
-        "img1Url": "./src/images/proizvodi/shoe-5.jpg"
-      },
-      {
-        "id": 6,
-        "descriptionId": 1,
-        "imagesId": 6,
-        "size37": false,
-        "size38": true,
-        "size39": true,
-        "size40": false,
-        "size41": true,
-        "size42": true,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-6.jpg"
-      },
-      {
-        "id": 7,
-        "descriptionId": 4,
-        "imagesId": 7,
-        "size37": false,
-        "size38": true,
-        "size39": true,
-        "size40": false,
-        "size41": true,
-        "size42": true,
-        "name": "Baletanke",
-        "category": "baletanke",
-        "price": 7480,
-        "img1Url": "./src/images/proizvodi/shoe-7.jpg"
-      },
-      {
-        "id": 8,
-        "descriptionId": 1,
-        "imagesId": 8,
-        "size37": true,
-        "size38": true,
-        "size39": true,
-        "size40": true,
-        "size41": false,
-        "size42": true,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 11300,
-        "img1Url": "./src/images/proizvodi/shoe-8.jpg"
-      },
-      {
-        "id": 9,
-        "descriptionId": 1,
-        "imagesId": 9,
-        "size37": true,
-        "size38": true,
-        "size39": true,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-9.jpg"
-      },{
-        "id": 10,
-        "descriptionId": 1,
-        "imagesId": 10,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": true,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-10.jpg"
-      },{
-        "id": 11,
-        "descriptionId": 3,
-        "imagesId": 11,
-        "size37": true,
-        "size38": true,
-        "size39": true,
-        "size40": true,
-        "size41": true,
-        "size42": true,
-        "name": "Papuče",
-        "category": "papuce",
-        "price": 9500,
-        "img1Url": "./src/images/proizvodi/shoe-11.jpg"
-      },{
-        "id": 12,
-        "descriptionId": 1,
-        "imagesId": 12,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-12.jpg"
-      },{
-        "id": 13,
-        "descriptionId": 4,
-        "imagesId": 13,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Baletanke",
-        "category": "baletanke",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-13.jpg"
-      },{
-        "id": 14,
-        "descriptionId": 2,
-        "imagesId": 14,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Sandale",
-        "category": "sandale",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-14.jpg"
-      },{
-        "id": 15,
-        "descriptionId": 1,
-        "imagesId": 15,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-15.jpg"
-      },{
-        "id": 16,
-        "descriptionId": 5,
-        "imagesId": 16,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Cipele",
-        "category": "cipele",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-16.jpg"
-      },{
-        "id": 17,
-        "descriptionId": 5,
-        "imagesId": 17,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Cipele",
-        "category": "cipele",
-        "price": 11600,
-        "img1Url": "./src/images/proizvodi/shoe-17.jpg"
-      },{
-        "id": 18,
-        "descriptionId": 5,
-        "imagesId": 18,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Cipele",
-        "category": "cipele",
-        "price": 11600,
-        "img1Url": "./src/images/proizvodi/shoe-18.jpg"
-      },{
-        "id": 19,
-        "descriptionId": 2,
-        "imagesId": 19,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Sandale",
-        "category": "sandale",
-        "price": 9800,
-        "img1Url": "./src/images/proizvodi/shoe-19.jpg"
-      },{
-        "id": 20,
-        "descriptionId": 2,
-        "imagesId": 20,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Sandale",
-        "category": "sandale",
-        "price": 9800,
-        "img1Url": "./src/images/proizvodi/shoe-20.jpg"
-      },{
-        "id": 21,
-        "descriptionId": 1,
-        "imagesId": 21,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 10480,
-        "img1Url": "./src/images/proizvodi/shoe-21.jpg"
-      },{
-        "id": 22,
-        "descriptionId": 2,
-        "imagesId": 22,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Sandale",
-        "category": "sandale",
-        "price": 9480,
-        "img1Url": "./src/images/proizvodi/shoe-22.jpg"
-      },{
-        "id": 23,
-        "descriptionId": 4,
-        "imagesId": 23,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Baletanke",
-        "category": "baletanke",
-        "price": 9700,
-        "img1Url": "./src/images/proizvodi/shoe-23.jpg"
-      },{
-        "id": 24,
-        "descriptionId": 1,
-        "imagesId": 24,
-        "size37": true,
-        "size38": true,
-        "size39": false,
-        "size40": true,
-        "size41": true,
-        "size42": false,
-        "name": "Salonke",
-        "category": "salonke",
-        "price": 11000,
-        "img1Url": "./src/images/proizvodi/shoe-24.jpg"
-      }
-    ],
+      "img1Url": "./src/images/proizvodi/shoe-9.jpg"
+    },{
+      "id": 10,
+      "descriptionId": 1,
+      "imagesId": 10,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": true,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-10.jpg"
+    },{
+      "id": 11,
+      "descriptionId": 3,
+      "imagesId": 11,
+      "size37": true,
+      "size38": true,
+      "size39": true,
+      "size40": true,
+      "size41": true,
+      "size42": true,
+      "name": "Papuče",
+      "category": "papuce",
+      "price": 9500,
+      "img1Url": "./src/images/proizvodi/shoe-11.jpg"
+    },{
+      "id": 12,
+      "descriptionId": 1,
+      "imagesId": 12,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-12.jpg"
+    },{
+      "id": 13,
+      "descriptionId": 4,
+      "imagesId": 13,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Baletanke",
+      "category": "baletanke",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-13.jpg"
+    },{
+      "id": 14,
+      "descriptionId": 2,
+      "imagesId": 14,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Sandale",
+      "category": "sandale",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-14.jpg"
+    },{
+      "id": 15,
+      "descriptionId": 1,
+      "imagesId": 15,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-15.jpg"
+    },{
+      "id": 16,
+      "descriptionId": 5,
+      "imagesId": 16,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Cipele",
+      "category": "cipele",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-16.jpg"
+    },{
+      "id": 17,
+      "descriptionId": 5,
+      "imagesId": 17,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Cipele",
+      "category": "cipele",
+      "price": 11600,
+      "img1Url": "./src/images/proizvodi/shoe-17.jpg"
+    },{
+      "id": 18,
+      "descriptionId": 5,
+      "imagesId": 18,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Cipele",
+      "category": "cipele",
+      "price": 11600,
+      "img1Url": "./src/images/proizvodi/shoe-18.jpg"
+    },{
+      "id": 19,
+      "descriptionId": 2,
+      "imagesId": 19,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Sandale",
+      "category": "sandale",
+      "price": 9800,
+      "img1Url": "./src/images/proizvodi/shoe-19.jpg"
+    },{
+      "id": 20,
+      "descriptionId": 2,
+      "imagesId": 20,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Sandale",
+      "category": "sandale",
+      "price": 9800,
+      "img1Url": "./src/images/proizvodi/shoe-20.jpg"
+    },{
+      "id": 21,
+      "descriptionId": 1,
+      "imagesId": 21,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-21.jpg"
+    },{
+      "id": 22,
+      "descriptionId": 2,
+      "imagesId": 22,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Sandale",
+      "category": "sandale",
+      "price": 9480,
+      "img1Url": "./src/images/proizvodi/shoe-22.jpg"
+    },{
+      "id": 23,
+      "descriptionId": 4,
+      "imagesId": 23,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Baletanke",
+      "category": "baletanke",
+      "price": 9700,
+      "img1Url": "./src/images/proizvodi/shoe-23.jpg"
+    },{
+      "id": 24,
+      "descriptionId": 1,
+      "imagesId": 24,
+      "size37": true,
+      "size38": true,
+      "size39": false,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 11000,
+      "img1Url": "./src/images/proizvodi/shoe-24.jpg"
+    }
+  ],
   "itemDescription": [
     {
       "id": 1,
       "text": "MOSAIC salonke su ručno izrađene sa puno ljubavi starih majstora. Originalan dizajn, maštovitost, a pre svega odličan kvalitet su odlike ovog proizvoda. Izrađene su od najkvalitetnije italijanske kože. Svaki model je unikatan. Visina štikle je 10cm."
-    },{
+    },
+    {
       "id": 2,
       "text": "MOSAIC sandale pored udobnosti i originalnog dizajna, krase jaki kontrasti i kreativnost koju potpisuje Tatjana Luković. Ručno su izrađene od kože i imaju za cilj da unesu radost i autentičnost u svakodnevni hod. Visina štikle je 6cm."
-    },{
+    },
+    {
       "id": 3,
       "text": "Pokažite da ste drugačiji, nosite MOSAIK papuče! Ovaj proizvod je unikatnog dizajna, ručno izrađen od najkvalitetnije italijanske kože. Unesite radost i autentičnost u svakodnevni hod. Visina štikle je 4cm."
-    },{
+    },
+    {
       "id": 4,
       "text": "MOSAIC baletanke su ručno izrađene sa puno ljubavi starih majstora. Originalan dizajn, maštovitost, a pre svega odličan kvalitet su odlike ovog proizvoda. Izrađene su od najkvalitetnije italijanske kože za lagan i udoban svkodnevni hod. Svaki model je unikatan."
-    },{
+    },
+    {
       "id": 5,
       "text": "Duboke cipele su ručno izrađene od najkvalitetnije italijanske kože. Pored udobnosti i originalnog dizajna, krase ih jaki kontrasti i kreativnost koju potpisuje Tatjana Luković. Peta od 4cm garantuje siguran i udoban hod."
     }
   ],
-  "itemImages":[
+  "itemImages": [
     {
       "id": 1,
-      "imgUrl": ["./src/images/proizvodi/shoe-1-1.jpg", "./src/images/proizvodi/shoe-1-2.jpg", "./src/images/proizvodi/shoe-1-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-1-1.jpg",
+        "./src/images/proizvodi/shoe-1-2.jpg",
+        "./src/images/proizvodi/shoe-1-3.jpg"
+      ]
+    },
+    {
       "id": 2,
-      "imgUrl": ["./src/images/proizvodi/shoe-2-1.jpg", "./src/images/proizvodi/shoe-2-2.jpg", "./src/images/proizvodi/shoe-2-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-2-1.jpg",
+        "./src/images/proizvodi/shoe-2-2.jpg",
+        "./src/images/proizvodi/shoe-2-3.jpg"
+      ]
+    },
+    {
       "id": 3,
-      "imgUrl": ["./src/images/proizvodi/shoe-3-1.jpg", "./src/images/proizvodi/shoe-3-2.jpg", "./src/images/proizvodi/shoe-3-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-3-1.jpg",
+        "./src/images/proizvodi/shoe-3-2.jpg",
+        "./src/images/proizvodi/shoe-3-3.jpg"
+      ]
+    },
+    {
       "id": 4,
-      "imgUrl": ["./src/images/proizvodi/shoe-4-1.jpg", "./src/images/proizvodi/shoe-4-2.jpg", "./src/images/proizvodi/shoe-4-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-4-1.jpg",
+        "./src/images/proizvodi/shoe-4-2.jpg",
+        "./src/images/proizvodi/shoe-4-3.jpg"
+      ]
+    },
+    {
       "id": 5,
-      "imgUrl": ["./src/images/proizvodi/shoe-5-1.jpg", "./src/images/proizvodi/shoe-5-2.jpg", "./src/images/proizvodi/shoe-5-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-5-1.jpg",
+        "./src/images/proizvodi/shoe-5-2.jpg",
+        "./src/images/proizvodi/shoe-5-3.jpg"
+      ]
+    },
+    {
       "id": 6,
-      "imgUrl": ["./src/images/proizvodi/shoe-6-1.jpg", "./src/images/proizvodi/shoe-6-2.jpg", "./src/images/proizvodi/shoe-6-3.jpg"]
-    }, {
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-6-1.jpg",
+        "./src/images/proizvodi/shoe-6-2.jpg",
+        "./src/images/proizvodi/shoe-6-3.jpg"
+      ]
+    },
+    {
       "id": 7,
-      "imgUrl": ["./src/images/proizvodi/shoe-7-1.jpg", "./src/images/proizvodi/shoe-7-2.jpg", "./src/images/proizvodi/shoe-7-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-7-1.jpg",
+        "./src/images/proizvodi/shoe-7-2.jpg",
+        "./src/images/proizvodi/shoe-7-3.jpg"
+      ]
+    },
+    {
       "id": 8,
-      "imgUrl": ["./src/images/proizvodi/shoe-8-1.jpg", "./src/images/proizvodi/shoe-8-2.jpg", "./src/images/proizvodi/shoe-8-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-8-1.jpg",
+        "./src/images/proizvodi/shoe-8-2.jpg",
+        "./src/images/proizvodi/shoe-8-3.jpg"
+      ]
+    },
+    {
       "id": 9,
-      "imgUrl": ["./src/images/proizvodi/shoe-9-1.jpg", "./src/images/proizvodi/shoe-9-2.jpg", "./src/images/proizvodi/shoe-9-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-9-1.jpg",
+        "./src/images/proizvodi/shoe-9-2.jpg",
+        "./src/images/proizvodi/shoe-9-3.jpg"
+      ]
+    },
+    {
       "id": 10,
-      "imgUrl": ["./src/images/proizvodi/shoe-10-1.jpg", "./src/images/proizvodi/shoe-10-2.jpg", "./src/images/proizvodi/shoe-10-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-10-1.jpg",
+        "./src/images/proizvodi/shoe-10-2.jpg",
+        "./src/images/proizvodi/shoe-10-3.jpg"
+      ]
+    },
+    {
       "id": 11,
-      "imgUrl": ["./src/images/proizvodi/shoe-11-1.jpg", "./src/images/proizvodi/shoe-11-2.jpg", "./src/images/proizvodi/shoe-11-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-11-1.jpg",
+        "./src/images/proizvodi/shoe-11-2.jpg",
+        "./src/images/proizvodi/shoe-11-3.jpg"
+      ]
+    },
+    {
       "id": 12,
-      "imgUrl": ["./src/images/proizvodi/shoe-12-1.jpg", "./src/images/proizvodi/shoe-12-2.jpg", "./src/images/proizvodi/shoe-12-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-12-1.jpg",
+        "./src/images/proizvodi/shoe-12-2.jpg",
+        "./src/images/proizvodi/shoe-12-3.jpg"
+      ]
+    },
+    {
       "id": 13,
-      "imgUrl": ["./src/images/proizvodi/shoe-13-1.jpg", "./src/images/proizvodi/shoe-13-2.jpg", "./src/images/proizvodi/shoe-13-3.jpg"]
-    }, {
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-13-1.jpg",
+        "./src/images/proizvodi/shoe-13-2.jpg",
+        "./src/images/proizvodi/shoe-13-3.jpg"
+      ]
+    },
+    {
       "id": 14,
-      "imgUrl": ["./src/images/proizvodi/shoe-14-1.jpg", "./src/images/proizvodi/shoe-14-2.jpg", "./src/images/proizvodi/shoe-14-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-14-1.jpg",
+        "./src/images/proizvodi/shoe-14-2.jpg",
+        "./src/images/proizvodi/shoe-14-3.jpg"
+      ]
+    },
+    {
       "id": 15,
-      "imgUrl": ["./src/images/proizvodi/shoe-15-1.jpg", "./src/images/proizvodi/shoe-15-2.jpg", "./src/images/proizvodi/shoe-15-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-15-1.jpg",
+        "./src/images/proizvodi/shoe-15-2.jpg",
+        "./src/images/proizvodi/shoe-15-3.jpg"
+      ]
+    },
+    {
       "id": 16,
-      "imgUrl": ["./src/images/proizvodi/shoe-16-1.jpg", "./src/images/proizvodi/shoe-16-2.jpg", "./src/images/proizvodi/shoe-16-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-16-1.jpg",
+        "./src/images/proizvodi/shoe-16-2.jpg",
+        "./src/images/proizvodi/shoe-16-3.jpg"
+      ]
+    },
+    {
       "id": 17,
-      "imgUrl": ["./src/images/proizvodi/shoe-17-1.jpg", "./src/images/proizvodi/shoe-17-2.jpg", "./src/images/proizvodi/shoe-17-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-17-1.jpg",
+        "./src/images/proizvodi/shoe-17-2.jpg",
+        "./src/images/proizvodi/shoe-17-3.jpg"
+      ]
+    },
+    {
       "id": 18,
-      "imgUrl":  ["./src/images/proizvodi/shoe-18-1.jpg", "./src/images/proizvodi/shoe-18-2.jpg", "./src/images/proizvodi/shoe-18-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-18-1.jpg",
+        "./src/images/proizvodi/shoe-18-2.jpg",
+        "./src/images/proizvodi/shoe-18-3.jpg"
+      ]
+    },
+    {
       "id": 19,
-      "imgUrl":  ["./src/images/proizvodi/shoe-19-1.jpg", "./src/images/proizvodi/shoe-19-2.jpg", "./src/images/proizvodi/shoe-19-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-19-1.jpg",
+        "./src/images/proizvodi/shoe-19-2.jpg",
+        "./src/images/proizvodi/shoe-19-3.jpg"
+      ]
+    },
+    {
       "id": 20,
-      "imgUrl":  ["./src/images/proizvodi/shoe-20-1.jpg", "./src/images/proizvodi/shoe-20-2.jpg", "./src/images/proizvodi/shoe-20-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-20-1.jpg",
+        "./src/images/proizvodi/shoe-20-2.jpg",
+        "./src/images/proizvodi/shoe-20-3.jpg"
+      ]
+    },
+    {
       "id": 21,
-      "imgUrl":  ["./src/images/proizvodi/shoe-21-1.jpg", "./src/images/proizvodi/shoe-21-2.jpg", "./src/images/proizvodi/shoe-21-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-21-1.jpg",
+        "./src/images/proizvodi/shoe-21-2.jpg",
+        "./src/images/proizvodi/shoe-21-3.jpg"
+      ]
+    },
+    {
       "id": 22,
-      "imgUrl":  ["./src/images/proizvodi/shoe-22-1.jpg", "./src/images/proizvodi/shoe-22-2.jpg", "./src/images/proizvodi/shoe-22-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-22-1.jpg",
+        "./src/images/proizvodi/shoe-22-2.jpg",
+        "./src/images/proizvodi/shoe-22-3.jpg"
+      ]
+    },
+    {
       "id": 23,
-      "imgUrl":  ["./src/images/proizvodi/shoe-23-1.jpg", "./src/images/proizvodi/shoe-23-2.jpg", "./src/images/proizvodi/shoe-23-3.jpg"]
-    },{
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-23-1.jpg",
+        "./src/images/proizvodi/shoe-23-2.jpg",
+        "./src/images/proizvodi/shoe-23-3.jpg"
+      ]
+    },
+    {
       "id": 24,
-      "imgUrl":  ["./src/images/proizvodi/shoe-24-1.jpg", "./src/images/proizvodi/shoe-24-2.jpg", "./src/images/proizvodi/shoe-24-3.jpg"]
+      "imgUrl": [
+        "./src/images/proizvodi/shoe-24-1.jpg",
+        "./src/images/proizvodi/shoe-24-2.jpg",
+        "./src/images/proizvodi/shoe-24-3.jpg"
+      ]
+    }
+  ],
+  "order": [
+    {
+      "id": 1
     }
   ]
 }

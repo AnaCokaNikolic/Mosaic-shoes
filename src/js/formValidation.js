@@ -1,8 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import $ from 'jquery';
-// import swal from 'sweetalert';
 import Swal from 'sweetalert2';
+import { postOrder } from './postOrder';
 
 const regExIme = /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,22}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,22})?$/;
 const regExEmail = /\S+@\S+\.\S+/;
@@ -22,6 +20,19 @@ function resetValues() {
     $(`#itemCount`)[0].innerHTML = `0`;
     $(`#shopButton`).prop(`disabled`, true);
     $(`#itemCount`).hide();
+    sessionStorage.clear();
+}
+
+function success() {
+    Swal.fire(
+        `Hvala!`,
+        `Vaša kupovina je uspešna!`,
+        `success`,
+      ).then(() => {
+        postOrder();
+        $(`#confirmationForm`)[0].submit();
+        resetValues();
+      });
 }
 
 function formValidation(e) {
@@ -149,24 +160,10 @@ function confirmationFormValidation(e) {
             $(`#confirmationMessage`).html(`<i class="fas fa-exclamation-circle"></i> Unesite validan CVV (xxx ili xxxx)`).show().fadeOut(4000);
             $(`#cvvCard`).focus();
         } else {
-            Swal.fire(
-                `Hvala!`,
-                `Vaša kupovina je uspešna!`,
-                `success`,
-              ).then(() => {
-                $(`#confirmationForm`)[0].submit();
-                resetValues();
-              });
+            success();
         }
     } else {
-        Swal.fire(
-            `Hvala!`,
-            `Vaša kupovina je uspešna!`,
-            `success`,
-          ).then(() => {
-            $(`#confirmationForm`)[0].submit();
-            resetValues();
-          });
+        success();
     }
 }
 

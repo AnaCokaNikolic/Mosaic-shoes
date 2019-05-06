@@ -24,6 +24,11 @@ module.exports = {
         "no-await-in-loop": 0,
         "no-plusplus": "off",
         "no-param-reassign": [2, {"props": false}],
-        "no-unused-expressions": ["error", {"allowTernary": true}]
+        "no-unused-expressions": ["error", {"allowTernary": true}],
+        "import/prefer-default-export": "off",
+        "no-console": "off",
+        "import/no-extraneous-dependencies": ["error", { devDependencies: true, }],
+        "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
+        "no-restricted-globals": ["error", "event", "fdescribe"]
     }
 };

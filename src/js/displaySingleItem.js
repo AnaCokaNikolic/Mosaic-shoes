@@ -1,7 +1,5 @@
-/* eslint-disable no-console */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable consistent-return */
+
 import axios from 'axios';
 import $ from 'jquery';
 
@@ -76,4 +74,4 @@ async function getSingleItem(id) {
   displaySingleItem(item[0], description, images);
 }
 
-export { getSingleItem };
+export { getSingleItem, api };

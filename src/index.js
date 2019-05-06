@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import $ from 'jquery';
 import AOS from 'aos';
 

@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import $ from 'jquery';
 import ScrollMagic from 'scrollmagic';
 

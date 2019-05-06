@@ -1,6 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable import/no-extraneous-dependencies */
-
 import axios from 'axios';
 import $ from 'jquery';
 import Swal from 'sweetalert2';
@@ -140,6 +137,7 @@ function checkItems(id, selectedSize) {
     }
     return status;
 }
+
 function addToCart(e) {
     e.preventDefault();
     if ($(`.sizeContainer input`).is(`:checked`)) {
