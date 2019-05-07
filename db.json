@@ -1,25 +1,25 @@
 {
-"items": [
-  {
-    "id": 1,
-    "descriptionId": 1,
-    "imagesId": 1,
-    "size37": true,
-    "size38": false,
-    "size39": true,
-    "size40": true,
-    "size41": true,
-    "size42": false,
-    "name": "Salonke",
-    "category": "salonke",
-    "price": 10480,
-    "img1Url": "./src/images/proizvodi/shoe-1.jpg"
-  },
-  {
+  "items": [
+    {
+      "id": 1,
+      "descriptionId": 1,
+      "imagesId": 1,
+      "size37": true,
+      "size38": false,
+      "size39": true,
+      "size40": true,
+      "size41": true,
+      "size42": false,
+      "name": "Salonke",
+      "category": "salonke",
+      "price": 10480,
+      "img1Url": "./src/images/proizvodi/shoe-1.jpg"
+    },
+    {
       "id": 2,
       "descriptionId": 3,
       "imagesId": 2,
-      "size37": false,
+      "size37": true,
       "size38": true,
       "size39": true,
       "size40": false,
@@ -53,7 +53,7 @@
       "size38": false,
       "size39": true,
       "size40": true,
-      "size41": false,
+      "size41": true,
       "size42": true,
       "name": "Baletanke",
       "category": "baletanke",
@@ -67,7 +67,7 @@
       "size37": false,
       "size38": true,
       "size39": true,
-      "size40": false,
+      "size40": true,
       "size41": true,
       "size42": true,
       "name": "Baletanke",
@@ -134,7 +134,8 @@
       "category": "salonke",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-9.jpg"
-    },{
+    },
+    {
       "id": 10,
       "descriptionId": 1,
       "imagesId": 10,
@@ -148,7 +149,8 @@
       "category": "salonke",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-10.jpg"
-    },{
+    },
+    {
       "id": 11,
       "descriptionId": 3,
       "imagesId": 11,
@@ -162,7 +164,8 @@
       "category": "papuce",
       "price": 9500,
       "img1Url": "./src/images/proizvodi/shoe-11.jpg"
-    },{
+    },
+    {
       "id": 12,
       "descriptionId": 1,
       "imagesId": 12,
@@ -176,7 +179,8 @@
       "category": "salonke",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-12.jpg"
-    },{
+    },
+    {
       "id": 13,
       "descriptionId": 4,
       "imagesId": 13,
@@ -190,7 +194,8 @@
       "category": "baletanke",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-13.jpg"
-    },{
+    },
+    {
       "id": 14,
       "descriptionId": 2,
       "imagesId": 14,
@@ -204,7 +209,8 @@
       "category": "sandale",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-14.jpg"
-    },{
+    },
+    {
       "id": 15,
       "descriptionId": 1,
       "imagesId": 15,
@@ -218,7 +224,8 @@
       "category": "salonke",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-15.jpg"
-    },{
+    },
+    {
       "id": 16,
       "descriptionId": 5,
       "imagesId": 16,
@@ -232,7 +239,8 @@
       "category": "cipele",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-16.jpg"
-    },{
+    },
+    {
       "id": 17,
       "descriptionId": 5,
       "imagesId": 17,
@@ -246,7 +254,8 @@
       "category": "cipele",
       "price": 11600,
       "img1Url": "./src/images/proizvodi/shoe-17.jpg"
-    },{
+    },
+    {
       "id": 18,
       "descriptionId": 5,
       "imagesId": 18,
@@ -260,7 +269,8 @@
       "category": "cipele",
       "price": 11600,
       "img1Url": "./src/images/proizvodi/shoe-18.jpg"
-    },{
+    },
+    {
       "id": 19,
       "descriptionId": 2,
       "imagesId": 19,
@@ -274,7 +284,8 @@
       "category": "sandale",
       "price": 9800,
       "img1Url": "./src/images/proizvodi/shoe-19.jpg"
-    },{
+    },
+    {
       "id": 20,
       "descriptionId": 2,
       "imagesId": 20,
@@ -288,7 +299,8 @@
       "category": "sandale",
       "price": 9800,
       "img1Url": "./src/images/proizvodi/shoe-20.jpg"
-    },{
+    },
+    {
       "id": 21,
       "descriptionId": 1,
       "imagesId": 21,
@@ -302,7 +314,8 @@
       "category": "salonke",
       "price": 10480,
       "img1Url": "./src/images/proizvodi/shoe-21.jpg"
-    },{
+    },
+    {
       "id": 22,
       "descriptionId": 2,
       "imagesId": 22,
@@ -316,7 +329,8 @@
       "category": "sandale",
       "price": 9480,
       "img1Url": "./src/images/proizvodi/shoe-22.jpg"
-    },{
+    },
+    {
       "id": 23,
       "descriptionId": 4,
       "imagesId": 23,
@@ -330,7 +344,8 @@
       "category": "baletanke",
       "price": 9700,
       "img1Url": "./src/images/proizvodi/shoe-23.jpg"
-    },{
+    },
+    {
       "id": 24,
       "descriptionId": 1,
       "imagesId": 24,
@@ -564,6 +579,20 @@
   ],
   "order": [
     {
+      "items": [
+        {
+          "itemId": "9",
+          "size": "39"
+        }
+      ],
+      "total": "10880",
+      "name": "Ana Milosavljević",
+      "address": "Nikolaja Gogolja 3",
+      "zipCode": "11000",
+      "city": "Beograd",
+      "country": "Srbija",
+      "phone": "060/123-4567",
+      "paid": "cash",
       "id": 1
     }
   ]

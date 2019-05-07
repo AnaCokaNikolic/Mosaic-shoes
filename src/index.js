@@ -27,7 +27,6 @@ $(document).ready(() => {
         getItems($(e.target).attr(`class`));
         $(e.target).addClass(`active`);
     });
-
     $(`#addToCartButton`).click(addToCart);
     $(`#sendButton`).click(formValidation);
     $(`#confirmationButton`).click(confirmationFormValidation);
